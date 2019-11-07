@@ -1,9 +1,34 @@
 
-
+/* General */
 body {
     background-color: #16141A;
 }
 
+.global-font-color {
+    color: grey;
+}
+
+.head-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.text-align-r {
+    text-align: right;
+}
+
+div {
+    text-align: justify;
+}
+
+hr {
+    border-color: white;
+}
+
+
+/* Nav Bar */
 .navbar {
     margin-bottom: 0;
     border-radius: 1px;
@@ -19,6 +44,8 @@ body {
     left: 100px;
 }
 
+
+/* Main */
 .main-logo {
     height: 100px;
 }
@@ -37,24 +64,14 @@ body {
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-.text-align-r {
-    text-align: right;
-}
-
 .main-bg {
     position: absolute;
     top: 90px;
     left: -400px;
 }
 
-div {
-    text-align: justify;
-}
 
-hr {
-    border-color: white;
-}
-
+/* Link */
 a:link {
     color: grey;
     text-decoration: none;
@@ -75,24 +92,14 @@ a:active {
     text-decoration: none;
 }
 
-.global-font-color {
-    color: grey;
-}
 
+/* Puller */
 .pull-center {
     text-align: center;
 }
 
 .pull-down {
     padding-top: 20px;
-}
-
-.pull-down-submitted {
-    padding-top: 132px;
-}
-
-.pull-down-upload-text {
-    padding-top: 5px;
 }
 
 .pull-up {
@@ -103,6 +110,8 @@ a:active {
     margin-top: -50px;
 }
 
+
+/* Input Text */
 input[type=text] {
     text-align: center;
     border: 2px solid #FA9C1E;
@@ -120,26 +129,8 @@ input[type=text]:focus {
     color: #CE7F18;
 }
 
-.login-area-image {
-    height: 32px;
-    width: 32px;
-}
 
-.login-area-name {
-    padding-left: 10px;
-}
-
-.supporter-confirm {
-    color: #FA9C1E;
-}
-
-.head-picture {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
-}
-
+/* Center */
 .center-max80 {
     display: block;
     margin-left: auto;
@@ -167,10 +158,8 @@ input[type=text]:focus {
     margin-right: auto;
 }
 
-.skill-logo {
-    max-height: 56px;
-}
 
+/* Spoiler */
 .spoiler {
     box-shadow: none !important;
 }
@@ -194,12 +183,8 @@ input[type=text]:focus {
     cursor: pointer;
 }
 
-.skill-player {
-    max-width: 80%;
-	margin: 0 auto;
-	border: 1px solid white;
-}
 
+/* Valky Wrapper */
 .valk-wrapper{
     display:table;
     width:auto;
@@ -207,6 +192,8 @@ input[type=text]:focus {
     width:100%;
 }
 
+
+/* Valky Player */
 .valk-player {
     max-width: 100%;
 	margin: 0 auto;
@@ -214,7 +201,7 @@ input[type=text]:focus {
 }
 
 .valk-player-remover {
-    background-image:url(/img/controls/remover.png);
+    background-image:url(/img/controls/remover_vid.png);
     background-repeat:no-repeat;
     width:100%;
     height:100%;
@@ -256,4 +243,40 @@ input[type=text]:focus {
     margin:auto;
     background-size:contain;
     background-position: center;
+}
+
+
+/* Valky Viewer */
+.valk-view-remover {
+    background-image:url(/img/controls/remover_img.png);
+    background-repeat:no-repeat;
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0%;
+    right:0%;
+    top:0%;
+    bottom:0%;
+    margin:auto;
+    background-size:contain;
+    background-position: center;
+}
+
+.valk-view-mark {
+    background-image:url(/img/controls/mark.png);
+    background-repeat:no-repeat;
+    width:20%;
+    height:20%;
+    position:absolute;
+    left:80%;
+    right:0%;
+    top:58%;
+    bottom:0%;
+    margin:auto;
+    background-size:contain;
+    background-position: center;
+}
+
+.valky-viewer {
+    max-height: 540px;
 }
