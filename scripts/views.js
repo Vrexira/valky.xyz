@@ -1,2 +1,2 @@
 // fade in remover
-$('.valk-wrapper').children(".valk-player-remover").fadeIn();
+$('.valk-wrapper').children(".valk-view-remover").fadeIn();
