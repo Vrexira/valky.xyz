@@ -1,2 +1,2 @@
-// fade in watermark
-$('.valk-wrapper').children(".valk-player-mark").fadeIn();
+// fade in remover
+$('.valk-wrapper').children(".valk-player-remover").fadeIn();
