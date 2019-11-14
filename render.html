@@ -27,6 +27,13 @@
 
 
     <!-- ------ -->
+    <!-- aframe -->
+    <!-- ------ -->
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+
+
+
+    <!-- ------ -->
     <!-- Basics -->
     <!-- ------ -->
     <link rel="icon" href="/img/main/logo128.png">
@@ -90,7 +97,7 @@
 
             <div class="col-sm">
                 <div class="main-text text-center">
-                    <h1>VALKY<br>Clothes</h1>
+                    <h1>VALKY<br>Character</h1>
                 </div>
             </div>
 
@@ -111,119 +118,22 @@
 
 
         
-        <!-- Views Row 1 -->
+        <!-- A-Frame Render -->
         <div class="row pull-down">
 
             <div class="col-sm">
-                <div class="main-text text-center pull-down">
-                    <h2>Heavy Metal</h2>
-                    <br>My favorite clothes!
-                    <br>I'm so glad my artificer got me those :>
-                </div>
-                <div class="valk-wrapper">
-                    <div class="main-text text-center">
-                        <img src="/img/model/clothes/valky_heavymetal_01.png" class="valky-viewer">
-                    </div>
-                    <div class="valk-view-remover"></div>
-                </div>
-            </div>
-
-            <div class="col-sm">
-                <div class="main-text text-center pull-down">
-                    <h2>Police</h2>
-                    <br>My working clothes.
-                    <br>Better don't be rude and don't act against the laws.
-                </div>
-                <div class="valk-wrapper">
-                    <div class="main-text text-center">
-                        <img src="/img/model/clothes/valky_police_01.png" class="valky-viewer">
-                    </div>
-                    <div class="valk-view-remover"></div>
-                </div>
-            </div>
-
-        </div>
-
-
-
-        <!-- horizontal space -->
-        <div class="container pull-down">
-            <br><br>
-        </div>
-
-
-        
-        <!-- Views Row 2 -->
-        <div class="row pull-down">
-
-            <div class="col-sm">
-                <div class="main-text text-center pull-down">
-                    <h2>Fight Armor</h2>
-                    <br>My fighting clothes.
-                    <br>Armor for when I need to fight against monsters!
-                </div>
-                <div class="valk-wrapper">
-                    <div class="main-text text-center">
-                        <img src="/img/model/clothes/valky_dragon_01.png" class="valky-viewer">
-                    </div>
-                    <div class="valk-view-remover"></div>
-                </div>
-            </div>
-
-            <div class="col-sm">
-                <div class="main-text text-center pull-down">
-                    <h2>Summer Suit</h2>
-                    <br>My summer clothes.
-                    <br>It can be hot during the summer, so I use these.
-                </div>
-                <div class="valk-wrapper">
-                    <div class="main-text text-center">
-                        <img src="/img/model/clothes/valky_lavaqueen_01.png" class="valky-viewer">
-                    </div>
-                    <div class="valk-view-remover"></div>
-                </div>
-            </div>
-
-        </div>
-
-
-
-        <!-- horizontal space -->
-        <div class="container pull-down">
-            <br><br>
-        </div>
-
-
-        
-        <!-- Views Row 3 -->
-        <div class="row pull-down">
-
-            <div class="col-sm">
-                <div class="main-text text-center pull-down">
-                    <h2>Kitty Cat</h2>
-                    <br>My under clothes.
-                    <br>Everyone needs underwear, what's so special? ö_ö
-                </div>
-                <div class="valk-wrapper">
-                    <div class="main-text text-center">
-                        <img src="/img/model/clothes/valky_kittycat_01.png" class="valky-viewer">
-                    </div>
-                    <div class="valk-view-remover"></div>
-                </div>
-            </div>
-
-            <div class="col-sm">
-                <div class="main-text text-center pull-down">
-                    <h2>Lingerie</h2>
-                    <br>My sexy clothes.
-                    <br>Every woman has those! So why not me, huh? 
-                </div>
-                <div class="valk-wrapper">
-                    <div class="main-text text-center">
-                        <img src="/img/model/clothes/valky_lingerie_01.png" class="valky-viewer">
-                    </div>
-                    <div class="valk-view-remover"></div>
-                </div>
+                <a-scene>
+                    <a-assets>
+                        <a-asset-item id="valky-obj" src="valky.obj"></a-asset-item>
+                        <a-asset-item id="valky-mtl" src="valky.mtl"></a-asset-item>
+                    </a-assets>
+                  
+                    <!-- Using the asset management system. -->
+                    <a-obj-model src="#valky-obj" mtl="#valky-mtl"></a-obj-model>
+                  
+                    <!-- Defining the URL inline. Not recommended but may be more comfortable. -->
+                    <a-obj-model src="valky.obj" mtl="valky.mtl"></a-obj-model>
+                </a-scene>
             </div>
 
         </div>

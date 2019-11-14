@@ -312,3 +312,14 @@ input[type=text]:focus {
 .valky-viewer {
     max-height: 540px;
 }
+
+/* zoom */
+.zoom {
+  padding: 50px;
+  transition: transform 2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(2);
+}
