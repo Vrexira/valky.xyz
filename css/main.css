@@ -1,7 +1,13 @@
 
 /* General */
 body {
+    background-image:url(/img/main/bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
     background-color: #16141A;
+    display: block;
 }
 
 .global-font-color {
@@ -12,7 +18,8 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 95%;
+    width: 100%;
+    padding-top: 100px;
 }
 
 .text-align-r {
@@ -27,16 +34,37 @@ hr {
     border-color: white;
 }
 
+.col {
+    width: 50%;
+}
+
 
 /* Nav Bar */
-.navbar {
-    margin-bottom: 0;
+#navbar {
     border-radius: 1px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    margin-top: -10px;
+    display: block;
+    transition: top 0.3s;
+}
+
+.navbar {
+    background-color: #16141A;
+    border-radius: 1px;
+    transition: top 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: #16141A;
+    border-radius: 1px;
+    transition: top 0.3s;
 }
 
 .nav-logo {
-    height: 70px;
-    margin-top: -10px;
+    height: 45px;
     display: block;
 }
 
@@ -46,6 +74,10 @@ hr {
 
 
 /* Main */
+.main-title {
+    padding-top: 100px;
+}
+
 .main-logo {
     height: 100px;
 }
