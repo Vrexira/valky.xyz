@@ -37,7 +37,7 @@
     <!-- Basics -->
     <!-- ------ -->
     <link rel="icon" href="/img/main/logo128.png">
-    <title>3D Model Clothes - Valky Codes</title>
+    <title>Web Render - Valky Codes</title>
 
 </head>
 
@@ -64,117 +64,53 @@
                         <a href="/animations" class="global-font-color">Animations</a>
                     </div>
 
+                    <div class="col-auto text-center pull-down">
+                        <a href="/render" class="global-font-color">Web Render</a>
+                    </div>
+
                 </div>
 
             </div>
         </div>
     </nav>
 
-    
-
-    <!-- ----------- -->
-    <!-- back to top -->
-    <!-- ----------- -->
-    <div id="top"><a name='top'></a></div>
-
 
     
     <!-- ------------ -->
     <!-- main content -->
     <!-- ------------ -->
-    <a-scene>
+    <div class="container">
+
+        <a-scene position="90 0 90">
             <a-assets>
-                <a-asset-item id="valky-obj" src="valky.obj"></a-asset-item>
-                <a-asset-item id="valky-mtl" src="valky.mtl"></a-asset-item>
+                <a-asset-item 
+                    id="glb_police" 
+                    src="/obj/police.glb">
+                </a-asset-item>
             </a-assets>
-            <a-obj-model src="#valky-obj" mtl="#valky-mtl"></a-obj-model>
-            <a-obj-model src="valky.obj" mtl="valky.mtl"></a-obj-model>
-    </a-scene>
-    <div class="container main-title">
-
-
-
-        <!-- Title -->
-        <div class="row pull-down">
-
-            <div class="col-sm">
-                <div class="main-text text-center">
-                    <img src="/img/main/logo128.png" class="main-logo">
-                </div>
-            </div>
-
-            <div class="col-sm">
-                <div class="main-text text-center">
-                    <h1>VALKY<br>Character</h1>
-                </div>
-            </div>
-
-            <div class="col-sm">
-                <div class="main-text text-center">
-                    <img src="/img/main/logo128.png" class="main-logo">
-                </div>
-            </div>
-
-        </div>
-
-
-
-        <!-- horizontal space -->
-        <div class="container pull-down">
-            <br><br><br>
-        </div>
-
-
-        
-        <!-- A-Frame Render -->
-        <div class="row pull-down">
-
-            <div class="col-sm">
-                <!--<a-scene>
-                    <a-assets>
-                        <a-asset-item id="valky-obj" src="valky.obj"></a-asset-item>
-                        <a-asset-item id="valky-mtl" src="valky.mtl"></a-asset-item>
-                    </a-assets>
-                    <a-obj-model src="#valky-obj" mtl="#valky-mtl"></a-obj-model>
-                    <a-obj-model src="valky.obj" mtl="valky.mtl"></a-obj-model>
-                </a-scene>-->
-            </div>
-
-        </div>
-
-
-
+            <a-entity>
+                <a-entity 
+                    camera="active: true" 
+                    look-controls 
+                    wasd-controls 
+                    position="9.3 22.6 26.1"
+                    rotation="-0.1 -4.5 0"
+                    rotation-reader>
+                </a-entity>
+                <a-entity 
+                    id="police" 
+                    gltf-model="#glb_police"
+                    drag-rotate-component>
+                </a-entity>
+            </a-entity>
+        </a-scene>
+            
     </div>
 
-    
 
-    <!-- -------------- -->
-    <!-- footer content -->
-    <!-- -------------- -->
-    <footer>
-        <div class="container">
-            <br>
-            <hr>
-            <br>
-            <div class="row">
-
-                <div class="col-auto col-mr">
-                    <div class="global-font-color">
-                        © 2019 Valky · All Rights Reserved
-                    </div>
-                </div>
-
-                <div class="col-auto">
-                    <div class="global-font-color">
-                        <a href="#top" class="global-font-color">Back to top</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <br>
-    </footer>
-
+    <!--
+        position="-55 -20 0"
+    -->
     
 
     <!-- ---------- -->
@@ -185,10 +121,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Custom JavaScript -->
-    <!-- pause slideshow on mouse hover -->
-    <script src="/scripts/slideshow.js"></script>
-    <!-- watermark -->
-    <script src="/scripts/views.js"></script>
     <script src="/scripts/scroll.js"></script>
 
 </body>
