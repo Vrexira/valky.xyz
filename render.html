@@ -27,13 +27,6 @@
 
 
     <!-- ------ -->
-    <!-- aframe -->
-    <!-- ------ -->
-    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-
-
-
-    <!-- ------ -->
     <!-- Basics -->
     <!-- ------ -->
     <link rel="icon" href="/img/main/logo128.png">
@@ -74,38 +67,220 @@
         </div>
     </nav>
 
+    
+
+    <!-- ----------- -->
+    <!-- back to top -->
+    <!-- ----------- -->
+    <div id="top"><a name='top'></a></div>
+
 
     
     <!-- ------------ -->
     <!-- main content -->
     <!-- ------------ -->
-    <div class="container">
+    <div class="container main-title">
 
-        <a-scene position="90 0 90">
-            <a-assets>
-                <a-asset-item 
-                    id="glb_clothes" 
-                    src="/obj/goddess.glb">
-                </a-asset-item>
-            </a-assets>
-            <a-entity>
-                <a-entity 
-                    camera="active: true" 
-                    position="3.3 28.1 26.1"
-                    rotation="-10 -4.5 0">
-                </a-entity>
-                <a-entity 
-                    wasd-controls 
-                    look-controls 
-                    id="clothes" 
-                    gltf-model="#glb_clothes"
-                    drag-rotate-component>
-                </a-entity>
-            </a-entity>
-        </a-scene>
-            
+
+
+        <!-- Title -->
+        <div class="row pull-down">
+
+            <div class="col-sm">
+                <div class="main-text text-center">
+                    <img src="/img/main/logo128.png" class="main-logo">
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="main-text text-center">
+                    <h1>VALKY<br>Web Render</h1>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="main-text text-center">
+                    <img src="/img/main/logo128.png" class="main-logo">
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- horizontal space -->
+        <div class="container pull-down">
+            <br><br><br>
+        </div>
+
+
+        
+        <!-- Intro - Row 1 -->
+        <div class="row pull-down">
+
+            <div class="col-sm">
+                <div class="main-text text-center pull-down">
+                    <h3>Ohh, so you would like to see how exactly I am looking?</h3>
+                    <br>
+                    <br>Well, I don't mind!
+                    <br>Feel free to choose any of my clothes from my closet below.
+                </div>
+                <div class="main-text text-center pull-down">
+                    1. Choose some clothes
+                    <br>2. Check the preview
+                    <br>3. Click on "view"
+                </div>
+                <div class="main-text text-center pull-down">
+                    After you clicked on "view", the Web Render will be loaded.
+                    <br>You can now fully inspect me with grabbing me with your mouse.
+                    <br>Now you will be able to watch me in a 360° angle.
+                    <br>Alternatively you can also use W and S keys for zooming in and out.
+                    <br>
+                    <br>There is also something neat in the Web Render function:
+                    <br>Use your phone and try to just physically moving it around.
+                    <br>There is no need to use your fingers anymore, so don't touch me :>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- horizontal space -->
+        <div class="container pull-down">
+            <br><br>
+        </div>
+
+
+        
+        <!-- Closet - Row 2 -->
+        <div class="row pull-down">
+
+            <!-- list -->
+            <div class="col-sm">
+                <div class="main-text text-center pull-down">
+                    <h2>My Closet:</h2>
+                </div>
+                <div class="list-group">
+                  
+                  <input type="radio" value="cloth_armor" id="cloth_armor" name="clothes" />
+                  <label class="list-group-item" for="cloth_armor">Armor for fighting</label>
+                  
+                  <input type="radio" value="cloth_bandage" id="cloth_bandage" name="clothes" />
+                  <label class="list-group-item" for="cloth_bandage">Bandages for halloween</label>
+                  
+                  <input type="radio" value="cloth_college" id="cloth_college" name="clothes" />
+                  <label class="list-group-item" for="cloth_college">College outfit</label>
+                  
+                  <input type="radio" value="cloth_goddess" id="cloth_goddess" name="clothes" />
+                  <label class="list-group-item" for="cloth_goddess">Goddess dress, yep that's right!</label>
+                  
+                  <input type="radio" value="cloth_hunter" id="cloth_hunter" name="clothes" />
+                  <label class="list-group-item" for="cloth_hunter">Hunter clothes</label>
+                  
+                  <input type="radio" value="cloth_metal" id="cloth_metal" name="clothes" />
+                  <label class="list-group-item" for="cloth_metal">Heavy Metal outfit, my fav clothes :></label>
+                  
+                  <input type="radio" value="cloth_kitty" id="cloth_kitty" name="clothes" />
+                  <label class="list-group-item" for="cloth_kitty">Kitty Cat underwear</label>
+                  
+                  <input type="radio" value="cloth_lingerie" id="cloth_lingerie" name="clothes" />
+                  <label class="list-group-item" for="cloth_lingerie">Lingerie, for my friend only!</label>
+                  
+                  <input type="radio" value="cloth_mecha" id="cloth_mecha" name="clothes" />
+                  <label class="list-group-item" for="cloth_mecha">Mecha suit for flying</label>
+                  
+                  <input type="radio" value="cloth_party" id="cloth_party" name="clothes" />
+                  <label class="list-group-item" for="cloth_party">Party dress to go out with</label>
+                  
+                  <input type="radio" value="cloth_photon" id="cloth_photon" name="clothes" />
+                  <label class="list-group-item" for="cloth_photon">Photon suit from my native planet</label>
+                  
+                  <input type="radio" value="cloth_police" id="cloth_police" name="clothes" />
+                  <label class="list-group-item" for="cloth_police">Police outift, my current working clothes</label>
+                  
+                  <input type="radio" value="cloth_sheriff" id="cloth_sheriff" name="clothes" />
+                  <label class="list-group-item" for="cloth_sheriff">Sheriff, my old working clothes</label>
+                  
+                  <input type="radio" value="cloth_santa" id="cloth_santa" name="clothes" />
+                  <label class="list-group-item" for="cloth_santa">Santa dress for christmas</label>
+                  
+                  <input type="radio" value="cloth_summer" id="cloth_summer" name="clothes" />
+                  <label class="list-group-item" for="cloth_summer">Summer clothes when it's hot outside</label>
+                  
+                  <input type="radio" value="cloth_winter" id="cloth_winter" name="clothes" />
+                  <label class="list-group-item" for="cloth_winter">Winter clothes when it's cold of course</label>
+                  
+                  <input type="radio" value="cloth_aot" id="cloth_aot" name="clothes" />
+                  <label class="list-group-item" for="cloth_aot">Cosplay: Attack on Titan</label>
+                  
+                  <input type="radio" value="cloth_pubg" id="cloth_pubg" name="clothes" />
+                  <label class="list-group-item" for="cloth_pubg">Cosplay: Playerunknow's Battleground</label>
+                  
+                </div>
+            </div>
+
+            <!-- preview -->
+            <div class="col-sm">
+                <div class="main-text text-center pull-down">
+                    <h2>Preview:</h2>
+                </div>
+                <div class="valk-wrapper">
+                    <div class="main-text text-center">
+                        <img src="" id="valky-clothes" class="valky-viewer">
+                    </div>
+                    <div class="valk-view-remover"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+        
+        <!-- Submit - Row 3 -->
+        <div class="row pull-down">
+
+            <div class="col-sm">
+                <div class="main-text text-center">
+                    <input class="valky-button" name="submit" value="Show clothes in Web Render">
+                </div>
+            </div>
+
+        </div>
+
+
+
     </div>
+
     
+
+    <!-- -------------- -->
+    <!-- footer content -->
+    <!-- -------------- -->
+    <footer>
+        <div class="container">
+            <br>
+            <hr>
+            <br>
+            <div class="row">
+
+                <div class="col-auto col-mr">
+                    <div class="global-font-color">
+                        © 2019 Valky · All Rights Reserved
+                    </div>
+                </div>
+
+                <div class="col-auto">
+                    <div class="global-font-color">
+                        <a href="#top" class="global-font-color">Back to top</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+    </footer>
+
     
 
     <!-- ---------- -->
@@ -123,6 +298,12 @@
 
     <!-- navbar -->
     <script src="/scripts/scroll.js"></script>
+
+    <!-- wrapper -->
+    <script src="/scripts/views.js"></script>
+
+    <!-- closet -->
+    <script src="/scripts/closet.js"></script>
 
 </body>
 

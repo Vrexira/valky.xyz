@@ -191,12 +191,8 @@ input[type=text]:focus {
 }
 
 
-/* Spoiler */
-.spoiler {
-    box-shadow: none !important;
-}
-
-.spoiler-button {
+/* Button */
+.valky-button {
     background-color: rgb(104, 104, 104);
     border: 1px solid white;
     color: white;
@@ -209,10 +205,14 @@ input[type=text]:focus {
     cursor: pointer;
 }
 
-.spoiler-button:hover {
+.valky-button:hover {
     background-color: rgb(104, 104, 104);
     color: white;
     cursor: pointer;
+}
+
+.valky-button:focus {
+    outline:0;
 }
 
 
@@ -322,4 +322,66 @@ input[type=text]:focus {
 
 .zoom:hover {
   transform: scale(2);
+}
+
+/* closet */
+#valky-clothes {
+    max-height: 295px;
+}
+
+.list-group{
+    max-height: 295px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.list-group-item {
+    user-select: none;
+    background-color: transparent;
+    color: white;
+	border: 1px solid white;
+}
+
+.list-group input[type="radio"] {
+  display: none;
+}
+
+.list-group input[type="radio"] + .list-group-item {
+  cursor: pointer;
+}
+
+.list-group input[type="radio"] + .list-group-item:before {
+  content: "\2022";
+  color: transparent;
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+.list-group input[type="radio"]:checked + .list-group-item {
+  background-color: grey;
+  color: white;
+}
+
+.list-group input[type="radio"]:checked + .list-group-item:before {
+  color: inherit;
+}
+
+
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+	border: 1px solid white;
+}
+
+::-webkit-scrollbar-track {
+    background: lightgrey; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey; 
+	border: 1px solid white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darkgrey; 
 }
