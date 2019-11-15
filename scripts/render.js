@@ -24,4 +24,4 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 var model = getUrlParameter('model');
 
-setTimeout(function(){ $("#glb_clothes").attr("src", "/obj/" + model + ".glb"); }, 300);
+setTimeout(function(){ $("#glb_clothes").attr("src", "/obj/" + model + ".glb"); }, 100);
