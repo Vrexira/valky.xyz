@@ -15,9 +15,13 @@ var getUrlParameter = function getUrlParameter(sParam) {
         if (sParameterName[1] === undefined) {
             window.open("/404","_self");
         }
+
     }
+
 };
+
+
 
 var model = getUrlParameter('model');
 
-setTimeout(function(){ $("#glb_clothes").attr("src", "/obj/" + model + ".glb"); }, 100);
+setTimeout(function(){ $("#glb_clothes").attr("src", "/obj/" + model + ".glb"); }, 300);
