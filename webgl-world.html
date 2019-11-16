@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- --------- -->
+    <!-- Meta Tags -->
+    <!-- --------- -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Valky Codes - For everything you need :>">
+    <meta property="og:description" content="Valky Codes - For everything you need :>">
+    <meta property="og:url" content="https://valky.xyz">
+    <meta property="og:title" content="Valky Codes">
+    <meta property="og:type" content="object">
+    <meta property="og:site_name" content="Valky Codes">
+    <meta property="og:image" content="https://valky.xyz/img/main/logo128.png">
+
+
+
+    <!-- --- -->
+    <!-- CSS -->
+    <!-- --- -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+
+
+
+    <!-- ---------- -->
+    <!-- JavaScript -->
+    <!-- ---------- -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- navbar -->
+    <script src="/scripts/scroll.js"></script>
+
+    <!-- A-Frame -->
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+
+    
+
+    <!-- ------ -->
+    <!-- Basics -->
+    <!-- ------ -->
+    <link rel="icon" href="/img/main/logo128.png">
+    <title>3D Model Web Render - Valky Codes</title>
+
+</head>
+
+<body>
+
+    <!-- ------ -->
+    <!-- navbar -->
+    <!-- ------ -->
+    <nav class="navbar sticky-top" id="navbar">
+        <div class="container">
+            <div class="nav-text">
+
+                <div class="row main-text">
+
+                    <div class="col-auto">
+                        <a class="navbar" href="https://valky.xyz"><img src="/img/main/logored.png" class="nav-logo image-center"></a>
+                    </div>
+
+                    <div class="col-auto pull-down">
+                        <a href="/clothes" class="global-font-color">Clothes</a>
+                    </div>
+
+                    <div class="col-auto pull-down">
+                        <a href="/animations" class="global-font-color">Animations</a>
+                    </div>
+
+                    <div class="col-auto pull-down">
+                        <a href="/render" class="global-font-color">Web Render</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    
+    <!-- ------------ -->
+    <!-- main content -->
+    <!-- ------------ -->
+    <div class="container">
+
+        <a-scene position="90 0 90">
+            <a-assets>
+                <a-asset-item 
+                    id="glb_world" 
+                    src="/obj/world/valkyria.glb">
+                </a-asset-item>
+            </a-assets>
+            <a-entity>
+                <a-entity 
+                    gltf-model="#glb_world"
+                    drag-rotate-component>
+                    <a-entity 
+                        gamepad-controls
+                        trackpad-controls
+                        keyboard-controls
+                        touch-controls
+                        id="world"
+                        look-controls="pointerLockEnabled: true; reverseTouchDrag: true;"
+                        wasd-controls="acceleration: 600" 
+                        camera="active: true" 
+                        position="3.3 28.1 26.1"
+                        rotation="-10 -4.5 0">
+                    </a-entity>
+                </a-entity>
+            </a-entity>
+        </a-scene>
+            
+    </div>
+
+    <!-- Movement -->
+    <script src="/scripts/movement.js"></script>
+
+</body>
+
+</html>
