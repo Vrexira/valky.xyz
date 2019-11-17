@@ -44,6 +44,12 @@
 
     <!-- A-Frame -->
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    
+    <!-- AF-Extras
+    <script src="https://cdn.jsdelivr.net/npm/aframe-extras@6.0.1/dist/aframe-extras.min.js"></script>-->
+
+    <!-- Movement -->
+    <script src="/scripts/movement.js"></script>
 
     
 
@@ -97,22 +103,30 @@
 
         <a-scene position="90 0 90">
             <a-assets>
-                <a-asset-item 
-                    id="glb_world" 
-                    src="/obj/world/valkyria.glb">
-                </a-asset-item>
+                    <!-- world -->
+                    <a-asset-item 
+                        id="glb_world" 
+                        src="/obj/world/valkyria.glb">
+                    </a-asset-item>
+                    <!-- navmesh
+                    <a-asset-item 
+                        id="glb_navmesh" 
+                        src="/obj/world/valkyria_navmesh.glb">
+                    </a-asset-item>-->
             </a-assets>
             <a-entity>
+                <!-- world view -->
                 <a-entity 
                     gltf-model="#glb_world"
                     drag-rotate-component>
+                    <!-- player view -->
                     <a-entity 
                         gamepad-controls
                         trackpad-controls
                         keyboard-controls
                         touch-controls
                         id="world"
-                        movement-controls="constrainToNavMesh: true;""
+                        movement-controls="constrainToNavMesh: true;"
                         look-controls="pointerLockEnabled: true; reverseTouchDrag: true;"
                         wasd-controls="acceleration: 600" 
                         camera="active: true" 
@@ -120,13 +134,16 @@
                         rotation="">
                     </a-entity>
                 </a-entity>
+                <!-- navmesh
+                <a-entity
+                    gltf-model="#glb_navmesh"
+                    nav-mesh
+                    visible="false">
+                </a-entity>-->
             </a-entity>
         </a-scene>
             
     </div>
-
-    <!-- Movement -->
-    <script src="/scripts/movement.js"></script>
 
 </body>
 
