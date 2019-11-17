@@ -3,19 +3,53 @@
 
 <head>
 
+    <!-- --------- -->
+    <!-- Meta Tags -->
+    <!-- --------- -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Valky Codes - For everything you need :>">
+    <meta property="og:description" content="Valky Codes - For everything you need :>">
+    <meta property="og:url" content="https://valky.xyz">
+    <meta property="og:title" content="Valky Codes">
+    <meta property="og:type" content="object">
+    <meta property="og:site_name" content="Valky Codes">
+    <meta property="og:image" content="https://valky.xyz/img/main/logo128.png">
+
+
+
+    <!-- --- -->
+    <!-- CSS -->
+    <!-- --- -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+
 
 
     <!-- ---------- -->
     <!-- JavaScript -->
     <!-- ---------- -->
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- navbar -->
+    <script src="/scripts/scroll.js"></script>
+
     <!-- A-Frame -->
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-
-    <!-- aframe inspector - TO_BE_DELETED -->
-    <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
-
+    
+    <!-- AF-Extras -->
     <script src="https://cdn.jsdelivr.net/npm/aframe-extras@6.0.1/dist/aframe-extras.min.js"></script>
+
+    <!-- Movement -->
+    <script src="/scripts/movement.js"></script>
 
     
 
@@ -29,19 +63,59 @@
 
 <body>
 
+    <!-- ------ -->
+    <!-- navbar -->
+    <!-- ------ -->
+    <nav class="navbar sticky-top" id="navbar">
+        <div class="container">
+            <div class="nav-text">
+
+                <div class="row main-text text-center">
+
+                    <div class="col-auto">
+                        <a class="navbar" href="https://valky.xyz"><img src="/img/main/logored.png" class="nav-logo image-center"></a>
+                    </div>
+
+                    <div class="col-auto pull-down">
+                        <a href="/clothes" class="global-font-color">Clothes</a>
+                    </div>
+
+                    <div class="col-auto pull-down">
+                        <a href="/animations" class="global-font-color">Animations</a>
+                    </div>
+
+                    <div class="col-auto pull-down">
+                        <a href="/render" class="global-font-color">Web Render</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
 
     
     <!-- ------------ -->
     <!-- main content -->
     <!-- ------------ -->
-    <div><a-scene stats="false" background="color: #ECECEC" renderer="gammaOutput: true; antialias: true;" light="defaultLightsEnabled: true;" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="">
+    <div class="container">
+        
+        <a-scene stats="false" background="color: #ECECEC" renderer="gammaOutput: true; antialias: true;" light="defaultLightsEnabled: true;" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="">
       
             <!-- Assets -->
             <a-assets timeout="30000">
         
-                <a-asset-item id="bunker" src="https://cdn.glitch.com/97aa531b-2863-45b0-9d3e-79d003c8caba%2Fbunker_textured.glb?1542245981120" response-type="arraybuffer"></a-asset-item>
+                <a-asset-item 
+                    id="bunker" 
+                    src="https://cdn.glitch.com/97aa531b-2863-45b0-9d3e-79d003c8caba%2Fbunker_textured.glb?1542245981120" 
+                    response-type="arraybuffer">
+                </a-asset-item>
                 
-                <a-asset-item id="navmesh" src="https://cdn.glitch.com/97aa531b-2863-45b0-9d3e-79d003c8caba%2Fbunker_navmesh.gltf?1542231238874"></a-asset-item>
+                <a-asset-item 
+                    id="navmesh" 
+                    src="https://cdn.glitch.com/97aa531b-2863-45b0-9d3e-79d003c8caba%2Fbunker_navmesh.gltf?1542231238874">
+                </a-asset-item>
                 
             </a-assets>
             
@@ -65,12 +139,19 @@
             </a-entity>
             
             <!-- Bunker and Nav-mesh -->
-            <a-entity gltf-model="#bunker"></a-entity>
-            <a-entity gltf-model="#navmesh" nav-mesh visible="false"></a-entity>
+            <a-entity 
+                gltf-model="#bunker">
+            </a-entity>
+            
+            <a-entity 
+                gltf-model="#navmesh" 
+                nav-mesh 
+                visible="false">
+            </a-entity>
             
         </a-scene>
+            
     </div>
-
 
 </body>
 
