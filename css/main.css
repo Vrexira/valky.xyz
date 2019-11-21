@@ -22,7 +22,7 @@ body {
     padding-bottom: 100px;
 }
 
-.head-bg {
+/* .head-bg {
     background-image:url(/img/main/head_bg.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -30,7 +30,7 @@ body {
     background-size: cover;
     background-color: #16141A;
     display: block;
-}
+} */
 
 .text-align-r {
     text-align: right;
@@ -321,6 +321,12 @@ input[type=text]:focus {
 
 .valky-viewer {
     max-height: 540px;
+}
+
+.valky-profile {
+    max-width: 80%;
+	margin: 0 auto;
+	border: 1px solid white;
 }
 
 /* zoom */
