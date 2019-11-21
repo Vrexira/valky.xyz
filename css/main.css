@@ -22,16 +22,6 @@ body {
     padding-bottom: 100px;
 }
 
-/* .head-bg {
-    background-image:url(/img/main/head_bg.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: scroll;
-    background-size: cover;
-    background-color: #16141A;
-    display: block;
-} */
-
 .text-align-r {
     text-align: right;
 }
@@ -99,17 +89,11 @@ hr {
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-.main-text-09 {
+.main-text-head {
     position: relative;
-    font-size: 0.9em;
+    font-size: 1.5em;
     color: white;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-}
-
-.main-bg {
-    position: absolute;
-    top: 90px;
-    left: -400px;
+    text-shadow: 1px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 
@@ -144,8 +128,16 @@ a:active {
     padding-top: 20px;
 }
 
+.pull-down-main {
+    padding-top: 10%;
+}
+
 .pull-up {
     margin-top: -100px;
+}
+
+.pull-up-head {
+    margin-top: -45%;
 }
 
 .pull-up-slide {
