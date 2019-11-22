@@ -36,43 +36,6 @@
 
 <body>
 
-    <!-- ------ -->
-    <!-- navbar -->
-    <!-- ------ -->
-    <nav class="navbar sticky-top" id="navbar">
-        <div class="container">
-            <div class="nav-text">
-
-                <div class="row main-text text-center">
-
-                    <div class="col-auto">
-                        <a class="navbar" href="https://valky.xyz"><img src="/img/main/logored.png" class="nav-logo image-center"></a>
-                    </div>
-
-                    <div class="col-auto pull-down">
-                        <a href="/history" class="global-font-color">History</a>
-                    </div>
-
-                    <div class="col-auto pull-down">
-                        <a href="/clothes" class="global-font-color">Clothes</a>
-                    </div>
-
-                    <div class="col-auto pull-down">
-                        <a href="/animations" class="global-font-color">Animations</a>
-                    </div>
-
-                    <div class="col-auto pull-down">
-                        <a href="/render" class="global-font-color">Web Render</a>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </nav>
-
-    
-
     <!-- ----------- -->
     <!-- back to top -->
     <!-- ----------- -->
@@ -80,11 +43,44 @@
 
 
 
+    <!-- ------ -->
+    <!-- navbar -->
+    <!-- ------ -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+
+            <div class="row">
+
+                <!-- burger -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- logo -->
+                <a class="navbar-brand" href="https://valky.xyz"><img src="/img/main/logored.png" class="nav-logo image-center"></a>
+
+                <!-- pages -->
+                <div class="collapse navbar-collapse main-text text-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link global-font-color" href="/history">History</a>
+                        <a class="nav-item nav-link global-font-color" href="/clothes">Clothes</a>
+                        <a class="nav-item nav-link global-font-color" href="/animations">Animations</a>
+                        <a class="nav-item nav-link global-font-color" href="/render">Web Render</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+
     
     <!-- ------------ -->
     <!-- main content -->
     <!-- ------------ -->
-    <div class="container main-title">
+    <div class="container pull-down">
 
 
 
@@ -126,18 +122,18 @@
             <div class="col-sm">
 
                 <div class="main-text text-center pull-down">
-                    <h2>Waiting</h2>
-                    My waiting animation.<br>
+                    <h2>Greeting</h2>
+                    My greeting animation.<br>
                 </div>
 
                 <div class="valk-wrapper center-max80 pull-down">
                     <video class="valk-player" poster="/img/controls/thumb.png">
-                        <source src="/vid/anim/waiting.mp4" type="video/mp4"> Your browser does not support ©ValkPlayer
+                        <source src="/vid/anim/greeting.mp4" type="video/mp4"> Your browser does not support ©ValkPlayer
                     </video>
                     <div class="valk-player-remover"></div>
                     <div class="valk-player-mark"></div>
                     <div class="valk-player-logo"></div>
-                    <p class="main-text text-center pull-up-slide">Waiting | powered by ©ValkPlayer</p>
+                    <p class="main-text text-center pull-up-slide">Greeting | powered by ©ValkPlayer</p>
                 </div>
 
             </div>
@@ -251,6 +247,39 @@
         </div>
 
 
+        
+        <!-- Anim Row 5 -->
+        <div class="row pull-down">
+
+            <div class="col-sm">
+
+                <div class="main-text text-center pull-down">
+                    <h2>Waiting</h2>
+                    My waiting animation.<br>
+                </div>
+
+                <div class="valk-wrapper center-max80 pull-down">
+                    <video class="valk-player" poster="/img/controls/thumb.png">
+                        <source src="/vid/anim/waiting.mp4" type="video/mp4"> Your browser does not support ©ValkPlayer
+                    </video>
+                    <div class="valk-player-remover"></div>
+                    <div class="valk-player-mark"></div>
+                    <div class="valk-player-logo"></div>
+                    <p class="main-text text-center pull-up-slide">Waiting | powered by ©ValkPlayer</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- horizontal space -->
+        <div class="container pull-down">
+            <br><br>
+        </div>
+
+
 
     </div>
 
@@ -261,9 +290,7 @@
     <!-- -------------- -->
     <footer>
         <div class="container">
-            <br>
             <hr>
-            <br>
             <div class="row">
 
                 <div class="col-auto col-mr">
@@ -279,8 +306,8 @@
                 </div>
 
             </div>
+            <br>
         </div>
-        <br>
     </footer>
 
     
