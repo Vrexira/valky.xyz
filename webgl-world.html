@@ -109,120 +109,155 @@
     <div class="container pull-down">
 
         <a-scene position="90 0 90"  vr-mode-ui="enabled: false">
+
+            <!-- ----- -->
+            <!-- Model -->
+            <!-- ----- -->
+
             <a-assets>
                 <!-- world -->
                 <a-asset-item 
                     id="glb_world" 
                     src="/obj/world/valkyria.glb">
                 </a-asset-item>
-                <!-- navmesh
+
+                <!-- navmesh -->
                 <a-asset-item 
                     id="glb_navmesh" 
                     src="/obj/world/valkyria_navmesh.glb">
-                </a-asset-item>-->
+                </a-asset-item>
 
+                <!-- armor -->
                 <a-asset-item 
                     id="valky_armor" 
                     src="/obj/armor.glb">
                 </a-asset-item>
 
+                <!-- bandage -->
                 <a-asset-item 
-                    id="valky_bandage" 
-                    src="/obj/bandage.glb">
+                    id="valky_goddess" 
+                    src="/obj/goddess.glb">
                 </a-asset-item>
 
+                <!-- photon -->
                 <a-asset-item 
                     id="valky_photon" 
                     src="/obj/photon.glb">
                 </a-asset-item>
 
+                <!-- police -->
                 <a-asset-item 
                     id="valky_police" 
                     src="/obj/police.glb">
                 </a-asset-item>
 
+                <!-- pubg -->
                 <a-asset-item 
                     id="valky_pubg" 
                     src="/obj/pubg.glb">
                 </a-asset-item>
 
             </a-assets>
+
+
+
+            <!-- ----- -->
+            <!-- World -->
+            <!-- ----- -->
+
             <!-- world view -->
             <a-entity 
                 gltf-model="#glb_world"
                 drag-rotate-component>
-                <!-- player view -->
-                <a-entity 
-                    gamepad-controls
-                    trackpad-controls
-                    keyboard-controls
-                    touch-controls
-                    id="world"
-                    movement-controls="constrainToNavMesh: true;"
-                    look-controls="pointerLockEnabled: true; reverseTouchDrag: true;"
-                    wasd-controls="acceleration: 600" 
-                    camera="active: true" 
-                    position="-130 20 125"
-                    rotation="0 0 0">
-                </a-entity>
             </a-entity>
 
-            <!-- character 1 -->
-            <a-entity 
-                look-controls
-                id="valky_armor_char" 
-                gltf-model="#valky_armor"
-                material="alphaTest: 0.5"
-                animation-mixer
-                position="-60 0 100">
-            </a-entity>
-
-            <!-- character 2 -->
-            <a-entity 
-                look-controls
-                id="valky_bandage_char" 
-                gltf-model="#valky_bandage"
-                material="alphaTest: 0.5"
-                animation-mixer
-                position="-60 0 50">
-            </a-entity>
-
-            <!-- character 3 -->
-            <a-entity 
-                look-controls
-                id="valky_photon_char" 
-                gltf-model="#valky_photon"
-                material="alphaTest: 0.5"
-                animation-mixer
-                position="-60 0 150">
-            </a-entity>
-
-            <!-- character 4 -->
-            <a-entity 
-                look-controls
-                id="valky_police_char" 
-                gltf-model="#valky_police"
-                material="alphaTest: 0.5"
-                animation-mixer
-                position="-60 0 200">
-            </a-entity>
-
-            <!-- character 5 -->
-            <a-entity 
-                look-controls
-                id="valky_pubg_char" 
-                gltf-model="#valky_pubg"
-                material="alphaTest: 0.5"
-                animation-mixer
-                position="0 0 -60">
-            </a-entity>
-
-            <!-- navmesh
+            <!-- navmesh -->
             <a-entity
                 gltf-model="#glb_navmesh"
                 nav-mesh
                 visible="false">
-            </a-entity>-->
+            </a-entity>
+            
+
+
+            <!-- ------ -->
+            <!-- Player -->
+            <!-- ------ -->
+
+            <!-- player view -->
+            <a-entity 
+                gamepad-controls
+                trackpad-controls
+                keyboard-controls
+                touch-controls
+                id="world"
+                movement-controls="constrainToNavMesh: true;"
+                look-controls="pointerLockEnabled: true;"
+                wasd-controls="acceleration: 600" 
+                camera="active: true" 
+                position="-130 36 125"
+                rotation="0 0 0">
+
+                <!-- character --
+                <a-entity 
+                    look-controls
+                    id="valky_pubg_char" 
+                    gltf-model="#valky_pubg"
+                    material="alphaTest: 0.5"
+                    animation-mixer
+                    position="0 -29.1 -35.0"
+                    rotation="0 180 0">
+                </a-entity>-->
+
+            </a-entity>
+
+
+
+
+            <!-- ---- -->
+            <!-- NPCs -->
+            <!-- ---- -->
+
+            <!-- character 1 -->
+            <a-entity 
+                id="valky_goddess_char" 
+                gltf-model="#valky_goddess"
+                material="alphaTest: 0.5"
+                position="-130 20 50">
+            </a-entity>
+
+            <!-- character 2 -->
+            <a-entity 
+                id="valky_armor_char" 
+                gltf-model="#valky_armor"
+                material="alphaTest: 0.5"
+                position="-100 10 67.5">
+            </a-entity>
+
+            <!-- character 3 -->
+            <a-entity 
+                id="valky_photon_char" 
+                gltf-model="#valky_photon"
+                material="alphaTest: 0.5"
+                position="-160 10 67.5">
+            </a-entity>
+
+            <!-- character 4 -->
+            <a-entity 
+                id="valky_police_char" 
+                gltf-model="#valky_police"
+                material="alphaTest: 0.5"
+                position="-145 15 57">
+            </a-entity>
+
+            <!-- character 5 -->
+            <a-entity 
+                id="valky_pubg_char" 
+                gltf-model="#valky_pubg"
+                material="alphaTest: 0.5"
+                position="-115 15 57">
+            </a-entity>
+
         </a-scene>
             
     </div>
