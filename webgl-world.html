@@ -48,6 +48,9 @@
     <!-- A-Extras -->
     <script src="https://cdn.jsdelivr.net/npm/aframe-extras@6.0.1/dist/aframe-extras.min.js"></script>
 
+    <!-- A-Orbit -->
+    <script src="https://unpkg.com/aframe-orbit-controls@1.0.0/dist/aframe-orbit-controls.min.js"></script>
+
     <!-- Movement -->
     <script src="/scripts/movement.js"></script>
 
@@ -195,28 +198,31 @@
             <!-- ------ -->
 
             <!-- player view -->
-            <a-entity 
-                id="world"
-                wasd-controls="acceleration: 600" 
-                camera="active: true" 
-                position="-130 36 125"
-                rotation="0 0 0">
-
-                <!-- character -->
+            <a-entity>
                 <a-entity 
-                    id="valky_player_char" 
-                    gltf-model="#valky_player"
-                    material="alphaTest: 0.5"
-                    animation-mixer
-                    position="0 -29.1 -40.0"
-                    rotation="0 0 0"
+                    id="valky_player_world"
+                    position="-130 36 125"
+                    look-controls="pointerLockEnabled: true;"
                     gamepad-controls
                     trackpad-controls
                     keyboard-controls
                     touch-controls
-                    look-controls="pointerLockEnabled: true;">
-                </a-entity>
+                    camera="active: true"
+                    orbit-controls="target: 0 1.6 1; minDistance: 0.5; maxDistance: 2; initialPosition: -130 36 125;">
 
+                    <!-- character -->
+                    <a-entity 
+                        id="valky_player_char" 
+                        gltf-model="#valky_player"
+                        material="alphaTest: 0.5"
+                        animation-mixer
+                        position="0 -29.1 -40.0"
+                        rotation="0 0 0"
+                        look-controls="pointerLockEnabled: true;"
+                        wasd-controls="acceleration: 600" >
+                    </a-entity>
+
+                </a-entity>
             </a-entity>
 
 
