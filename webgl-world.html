@@ -45,8 +45,8 @@
     <!-- A-Frame -->
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     
-    <!-- A-Extras 
-    <script src="https://cdn.jsdelivr.net/npm/aframe-extras@6.0.1/dist/aframe-extras.min.js"></script>-->
+    <!-- A-Extras -->
+    <script src="https://cdn.jsdelivr.net/npm/aframe-extras@6.0.1/dist/aframe-extras.min.js"></script>
 
     <!-- Movement -->
     <script src="/scripts/movement.js"></script>
@@ -127,16 +127,22 @@
                     src="/obj/world/valkyria_navmesh.glb">
                 </a-asset-item>
 
+                <!-- player -->
+                <a-asset-item 
+                    id="valky_player" 
+                    src="/obj/player/player.glb">
+                </a-asset-item>
+
                 <!-- armor -->
                 <a-asset-item 
                     id="valky_armor" 
                     src="/obj/armor.glb">
                 </a-asset-item>
 
-                <!-- bandage -->
+                <!-- hunter -->
                 <a-asset-item 
-                    id="valky_goddess" 
-                    src="/obj/goddess.glb">
+                    id="valky_hunter" 
+                    src="/obj/hunter.glb">
                 </a-asset-item>
 
                 <!-- photon -->
@@ -186,28 +192,26 @@
 
             <!-- player view -->
             <a-entity 
-                gamepad-controls
-                trackpad-controls
-                keyboard-controls
-                touch-controls
                 id="world"
-                movement-controls="constrainToNavMesh: true;"
-                look-controls="pointerLockEnabled: true;"
                 wasd-controls="acceleration: 600" 
                 camera="active: true" 
                 position="-130 36 125"
                 rotation="0 0 0">
 
-                <!-- character --
+                <!-- character -->
                 <a-entity 
-                    look-controls
-                    id="valky_pubg_char" 
-                    gltf-model="#valky_pubg"
+                    id="valky_player_char" 
+                    gltf-model="#valky_player"
                     material="alphaTest: 0.5"
                     animation-mixer
-                    position="0 -29.1 -35.0"
-                    rotation="0 180 0">
-                </a-entity>-->
+                    position="0 -29.1 -40.0"
+                    rotation="0 0 0"
+                    gamepad-controls
+                    trackpad-controls
+                    keyboard-controls
+                    touch-controls
+                    look-controls="pointerLockEnabled: true;">
+                </a-entity>
 
             </a-entity>
 
@@ -220,10 +224,11 @@
 
             <!-- character 1 -->
             <a-entity 
-                id="valky_goddess_char" 
-                gltf-model="#valky_goddess"
+                id="valky_hunter_char" 
+                gltf-model="#valky_hunter"
                 material="alphaTest: 0.5"
-                position="-130 20 50">
+                position="-130 20 50"
+                animation-mixer>
             </a-entity>
 
             <!-- character 2 -->
@@ -231,7 +236,8 @@
                 id="valky_armor_char" 
                 gltf-model="#valky_armor"
                 material="alphaTest: 0.5"
-                position="-100 10 67.5">
+                position="-100 10 67.5"
+                animation-mixer>
             </a-entity>
 
             <!-- character 3 -->
@@ -239,7 +245,8 @@
                 id="valky_photon_char" 
                 gltf-model="#valky_photon"
                 material="alphaTest: 0.5"
-                position="-160 10 67.5">
+                position="-160 10 67.5"
+                animation-mixer>
             </a-entity>
 
             <!-- character 4 -->
@@ -247,7 +254,8 @@
                 id="valky_police_char" 
                 gltf-model="#valky_police"
                 material="alphaTest: 0.5"
-                position="-145 15 57">
+                position="-145 15 57"
+                animation-mixer>
             </a-entity>
 
             <!-- character 5 -->
@@ -255,7 +263,8 @@
                 id="valky_pubg_char" 
                 gltf-model="#valky_pubg"
                 material="alphaTest: 0.5"
-                position="-115 15 57">
+                position="-115 15 57"
+                animation-mixer>
             </a-entity>
 
         </a-scene>

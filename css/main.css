@@ -126,7 +126,7 @@ a:active {
 }
 
 .pull-down-main {
-    padding-top: 10%;
+    padding-top: 100px;
 }
 
 .pull-up {
@@ -134,7 +134,7 @@ a:active {
 }
 
 .pull-up-head {
-    margin-top: -45%;
+    margin-top: -200px;
 }
 
 .pull-up-slide {
