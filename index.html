@@ -132,7 +132,13 @@
 
                     <!-- VALKY -->
                     <div class="col-sm pull-up-head">
-                        <a-scene position="0 0 180" vr-mode-ui="enabled: false" embedded>
+                        <a-scene 
+                            position="0 0 180" 
+                            vr-mode-ui="enabled: false" 
+                            renderer="antialias: true;
+                                    sortObjects: true;
+                                    logarithmicDepthBuffer: true;"
+                            embedded>
                 
                             <a-assets>
                                 <a-asset-item 
@@ -194,7 +200,7 @@
                 <div class="row">
         
                     <div class="col-sm">
-                        <div class="container pull-down">
+                        <div class="pull-down">
                             <br><br><br><br><br><br>
                         </div>
                     </div>

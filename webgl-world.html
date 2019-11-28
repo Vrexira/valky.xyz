@@ -108,7 +108,11 @@
     <!-- ------------ -->
     <div class="container pull-down">
 
-        <a-scene position="90 0 90"  vr-mode-ui="enabled: false">
+        <a-scene
+            vr-mode-ui="enabled: false" 
+            renderer="antialias: true;
+                    sortObjects: true;
+                    logarithmicDepthBuffer: true;">
 
             <!-- ----- -->
             <!-- Model -->
