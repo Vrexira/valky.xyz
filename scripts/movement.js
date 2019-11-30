@@ -4,6 +4,7 @@
 // ----------------- //
 
 // shift - move faster
+// -------------------
 $(document).keydown(function (e) {
     if (e.keyCode == 16) {
         $("#valky_player_char").attr("wasd-controls", "acceleration: 5000");
@@ -12,37 +13,31 @@ $(document).keydown(function (e) {
 
 $(document).keyup(function (e) {
     if (e.keyCode == 16) {
-        $("#valky_player_char").attr("wasd-controls", "acceleration: 600");
+        $("#valky_player_char").attr("wasd-controls", "acceleration: 1000");
     }
 });
 
 
 // w a s d
+// -------
 // $(document).keydown(function (e) {
 //     if (e.keyCode == 87 || e.keyCode == 65 || e.keyCode == 83 || e.keyCode == 68) {
-        
+//
 //     }
 // });
 
 
-// l-ctrl - camera movement
+// l-ctrl
+// ------
 // $(document).keydown(function (e) {
 //     if (e.keyCode == 17) {
-//         $("#valky_player_char").attr("wasd-controls", "enabled: false;");
-//         $("#valky_player_char").attr("look-controls", "enabled: false;");
-        
-//         $("#valky_player_view").attr("wasd-controls", "enabled: true;");
-//         $("#valky_player_view").attr("look-controls", "enabled: true;");
+//
 //     }
 // });
 
 // $(document).keyup(function (e) {
 //     if (e.keyCode == 17) {
-//         $("#valky_player_char").attr("wasd-controls", "enabled: true;");
-//         $("#valky_player_char").attr("look-controls", "enabled: true; pointerLockEnabled: true;");
-        
-//         $("#valky_player_view").attr("wasd-controls", "enabled: false;");
-//         $("#valky_player_view").attr("look-controls", "enabled: false;");
+//
 //     }
 // });
 
@@ -50,62 +45,33 @@ $(document).keyup(function (e) {
 
 
 // ------------------ //
-// Fix Camera to View //
+// Fix Camera to Char //
 // ------------------ //
 
-// press W
-// $(document).keydown(function (e) {
-//    if (e.keyCode == 87) {
+AFRAME.registerComponent('rotation-reader', {
+    tick: function () {
 
-        AFRAME.registerComponent('rotation-reader', {
-            tick: function () {
-        
-                // `rotation` is a three.js Euler using radians. `quaternion` also available.
-                var rotation = this.el.object3D.rotation;
-                $.each(rotation, function(index, value) {
+        // get `position` from object (#valky_player_char)
+        var position = this.el.object3D.position;
+        $.each(position, function(index, value) {
 
-                    if (index == "_x") {
-                        return rotationX = (value * 3.1415);
-                    }
-
-                    if (index == "_y") {
-                        return rotationY = (value * 3.1415);
-                    }
-
-                    if (index == "_z") {
-                        return rotationZ = (value * 3.1415);
-                    }
-
-                });
-        
-
-                // `position` is a three.js Vector3.
-                var position = this.el.object3D.position;
-                $.each(position, function(index, value) {
-
-                    if (index == "x") {
-                        return positionX = (value);
-                    }
-
-                    if (index == "y") {
-                        return positionY = (27.1 + value);
-                    }
-
-                    if (index == "z") {
-                        return positionZ = (value);
-                    }
-
-                    // position="-130 36 125"
-                    // target: -130 37.1 95.0;
-
-
-                });
-
-                $("#valky_player_view").attr("orbit-controls", "target: " + positionX + " " + positionY + " " + positionZ + ";");
-
-                
+            if (index == "x") {
+                return positionX = (value);
             }
+
+            if (index == "y") {
+                return positionY = (27.1 + value);
+            }
+
+            if (index == "z") {
+                return positionZ = (value);
+            }
+
         });
+
+        // set `position` to camera (#valky_player_view)
+        $("#valky_player_view").attr("orbit-controls", "target: " + positionX + " " + positionY + " " + positionZ + ";");
+
+    }
+});
         
-//    }
-//});
