@@ -199,76 +199,80 @@
 
             <!-- player view -->
 
-                <a-entity 
-                    id="valky_player_world"
-                    position="-130 36 125"
-                    camera="active: true; fov: 50; zoom: 0.4;">
 
-                    <!-- character -->
+                <!-- character -->
+                <a-entity 
+                id="valky_player_view"
+                orbit-controls="
+                    target: -130 37.1 95.0;
+                    initialPosition: -150 37.1 130;
+                    minDistance: 30;
+                    maxDistance: 50;">
                     <a-entity 
                         id="valky_player_char" 
                         gltf-model="#valky_player"
                         material="alphaTest: 0.5"
                         animation-mixer
-                        position="0 -29.1 -30.0"
+                        position="-130 10 95.0"
                         rotation="0 0 0"
-                        wasd-controls="acceleration: 600"
-                        look-controls="enabled: true; pointerLockEnabled: true;">
+                        wasd-controls="enabled: true; acceleration: 600"
+                        look-controls="enabled: true; pointerLockEnabled: true;"
+                        rotation-reader>
                     </a-entity>
-
                 </a-entity>
 
 
 
 
-            <!-- ---- -->
-            <!-- NPCs -->
-            <!-- ---- -->
+                <!-- ---- -->
+                <!-- NPCs -->
+                <!-- ---- -->
 
-            <!-- character 1 -->
-            <a-entity 
-                id="human_hunter_char" 
-                gltf-model="#human_hunter"
-                material="alphaTest: 0.5"
-                position="-130 20 50"
-                animation-mixer>
-            </a-entity>
+                <!-- character 1 -->
+                <a-entity 
+                    id="human_hunter_char" 
+                    gltf-model="#human_hunter"
+                    material="alphaTest: 0.5"
+                    position="-130 20 50"
+                    animation-mixer>
+                </a-entity>
 
-            <!-- character 2 -->
-            <a-entity 
-                id="valky_armor_char" 
-                gltf-model="#valky_armor"
-                material="alphaTest: 0.5"
-                position="-100 10 67.5"
-                animation-mixer>
-            </a-entity>
+                <!-- character 2 -->
+                <a-entity 
+                    id="valky_armor_char" 
+                    gltf-model="#valky_armor"
+                    material="alphaTest: 0.5"
+                    position="-100 10 67.5"
+                    animation-mixer>
+                </a-entity>
 
-            <!-- character 3 -->
-            <a-entity 
-                id="valky_photon_char" 
-                gltf-model="#valky_photon"
-                material="alphaTest: 0.5"
-                position="-160 10 67.5"
-                animation-mixer>
-            </a-entity>
+                <!-- character 3 -->
+                <a-entity 
+                    id="valky_photon_char" 
+                    gltf-model="#valky_photon"
+                    material="alphaTest: 0.5"
+                    position="-160 10 67.5"
+                    animation-mixer>
+                </a-entity>
 
-            <!-- character 4 -->
-            <a-entity 
-                id="valky_police_char" 
-                gltf-model="#valky_police"
-                material="alphaTest: 0.5"
-                position="-145 15 57"
-                animation-mixer>
-            </a-entity>
+                <!-- character 4 -->
+                <a-entity 
+                    id="valky_police_char" 
+                    gltf-model="#valky_police"
+                    material="alphaTest: 0.5"
+                    position="-145 15 57"
+                    animation-mixer>
+                </a-entity>
 
-            <!-- character 5 -->
-            <a-entity 
-                id="valky_pubg_char" 
-                gltf-model="#valky_pubg"
-                material="alphaTest: 0.5"
-                position="-115 15 57"
-                animation-mixer>
-            </a-entity>
+                <!-- character 5 -->
+                <a-entity 
+                    id="valky_pubg_char" 
+                    gltf-model="#valky_pubg"
+                    material="alphaTest: 0.5"
+                    position="-115 15 57"
+                    animation-mixer>
+                </a-entity>
+
 
         </a-scene>
             
