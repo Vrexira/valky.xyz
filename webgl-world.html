@@ -39,9 +39,6 @@
     <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
-    <!-- navbar -->
-    <script src="/scripts/scroll.js"></script>
-
     <!-- A-Frame -->
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     
@@ -211,7 +208,7 @@
                     <a-entity 
                         id="valky_player_char" 
                         gltf-model="#valky_player"
-                        material="alphaTest: 0.5"
+                        material="alphaTest: 0.5; side: double;"
                         position="-130 10 95.0"
                         rotation="0 0 0"
                         wasd-controls="acceleration: 1000"
