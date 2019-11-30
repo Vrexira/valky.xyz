@@ -18,28 +18,52 @@ $(document).keyup(function (e) {
 });
 
 
-// w a s d
-// -------
-// $(document).keydown(function (e) {
-//     if (e.keyCode == 87 || e.keyCode == 65 || e.keyCode == 83 || e.keyCode == 68) {
-//
-//     }
-// });
+// w keyCode == 87
+// a keyCode == 65
+// s keyCode == 83
+// d keyCode == 68
 
 
-// l-ctrl
-// ------
-// $(document).keydown(function (e) {
-//     if (e.keyCode == 17) {
-//
-//     }
-// });
 
-// $(document).keyup(function (e) {
-//     if (e.keyCode == 17) {
-//
-//     }
-// });
+// 1 keyCode == 49
+$(document).keydown(function (e) {
+    if (e.keyCode == 49) {
+        $("#human_hunter_char").attr("animation-mixer", "clip: angry; loop:once;");
+    }
+});
+
+// 2 keyCode == 50
+$(document).keydown(function (e) {
+    if (e.keyCode == 50) {
+        $("#human_hunter_char").attr("animation-mixer", "clip: applaud; loop:once;");
+    }
+});
+
+// 3 keyCode == 51
+$(document).keydown(function (e) {
+    if (e.keyCode == 51) {
+        $("#human_hunter_char").attr("animation-mixer", "clip: attack; loop:once;");
+    }
+});
+
+// 4 keyCode == 52
+$(document).keydown(function (e) {
+    if (e.keyCode == 52) {
+        $("#human_hunter_char").attr("animation-mixer", "clip: beg; loop:once;");
+    }
+});
+
+
+// 5 keyCode == 53
+// 6 keyCode == 54
+// 7 keyCode == 55
+// 8 keyCode == 56
+// 9 keyCode == 57
+// 0 keyCode == 48 
+
+
+// l-ctrl keyCode == 17
+// l-alt  keyCode == 18
 
 
 

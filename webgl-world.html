@@ -137,16 +137,16 @@
                     src="/obj/player/player.glb">
                 </a-asset-item>
 
+                <!-- hunter -->
+                <a-asset-item 
+                    id="human_hunter" 
+                    src="/obj/human/human_anim.glb">
+                </a-asset-item>
+
                 <!-- armor -->
                 <a-asset-item 
                     id="valky_armor" 
                     src="/obj/armor.glb">
-                </a-asset-item>
-
-                <!-- hunter -->
-                <a-asset-item 
-                    id="human_hunter" 
-                    src="/obj/human/hunter.glb">
                 </a-asset-item>
 
                 <!-- photon -->
@@ -231,7 +231,7 @@
                     gltf-model="#human_hunter"
                     material="alphaTest: 0.5"
                     position="-130 20 50"
-                    animation-mixer>
+                    animation-mixer="clip: attack; loop:once">
                 </a-entity>
 
                 <!-- character 2 -->
