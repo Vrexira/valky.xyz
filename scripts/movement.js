@@ -4,21 +4,34 @@
 // ----------------- //
 
 // shift - move faster
-// -------------------
+// -------------------                             animation-mixer="clip: idle; loop:infite;"
 $(document).keydown(function (e) {
     if (e.keyCode == 16) {
         $("#valky_player_char").attr("wasd-controls", "acceleration: 5000");
+        $("#valky_player_char").attr("animation-mixer", "clip: run; loop:infite;");
     }
 });
 
 $(document).keyup(function (e) {
     if (e.keyCode == 16) {
         $("#valky_player_char").attr("wasd-controls", "acceleration: 1000");
+        $("#valky_player_char").attr("animation-mixer", "clip: walk; loop:infite;");
     }
 });
 
 
 // w keyCode == 87
+$(document).keydown(function (e) {
+    if (e.keyCode == 87) {
+        $("#valky_player_char").attr("animation-mixer", "clip: walk; loop:infite;");
+    }
+});
+
+$(document).keyup(function (e) {
+    if (e.keyCode == 87) {
+        $("#valky_player_char").attr("animation-mixer", "clip: idle; loop:infite;");
+    }
+});
 // a keyCode == 65
 // s keyCode == 83
 // d keyCode == 68

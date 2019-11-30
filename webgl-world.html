@@ -134,7 +134,7 @@
                 <!-- player -->
                 <a-asset-item 
                     id="valky_player" 
-                    src="/obj/player/player.glb">
+                    src="/obj/player/castanic_player.glb">
                 </a-asset-item>
 
                 <!-- hunter -->
@@ -214,7 +214,7 @@
                         wasd-controls="acceleration: 1000"
                         look-controls="pointerLockEnabled: true;"
                         rotation-reader
-                        animation-mixer>
+                        animation-mixer="clip: idle; loop:infite;">
                     </a-entity>
                 </a-entity>
 
@@ -231,7 +231,7 @@
                     gltf-model="#human_hunter"
                     material="alphaTest: 0.5"
                     position="-130 20 50"
-                    animation-mixer="clip: attack; loop:once">
+                    animation-mixer="clip: attack; loop:once;">
                 </a-entity>
 
                 <!-- character 2 -->
