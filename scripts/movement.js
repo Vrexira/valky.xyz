@@ -6,31 +6,23 @@
 // shift - move faster
 $(document).keydown(function (e) {
     if (e.keyCode == 16) {
-        if (e.keyCode == 17) {
-            $("#valky_player_view").attr("wasd-controls", "acceleration: 5000");
-        } else {
-            $("#valky_player_char").attr("wasd-controls", "acceleration: 5000");
-        }
+        $("#valky_player_char").attr("wasd-controls", "acceleration: 5000");
     }
 });
 
 $(document).keyup(function (e) {
     if (e.keyCode == 16) {
-        if (e.keyCode == 17) {
-            $("#valky_player_view").attr("wasd-controls", "acceleration: 600");
-        } else {
-            $("#valky_player_char").attr("wasd-controls", "acceleration: 600");
-        }
+        $("#valky_player_char").attr("wasd-controls", "acceleration: 600");
     }
 });
 
 
 // w a s d
-$(document).keydown(function (e) {
-    if (e.keyCode == 87 || e.keyCode == 65 || e.keyCode == 83 || e.keyCode == 68) {
+// $(document).keydown(function (e) {
+//     if (e.keyCode == 87 || e.keyCode == 65 || e.keyCode == 83 || e.keyCode == 68) {
         
-    }
-});
+//     }
+// });
 
 
 // l-ctrl - camera movement
