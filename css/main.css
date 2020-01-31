@@ -559,7 +559,7 @@ input[type=text]:focus {
         height: 100%;
     }
 }
-
+/*
 @media (min-aspect-ratio: 16/9) {
     .fullscreen-bg__video {
       height: 300%;
@@ -574,7 +574,7 @@ input[type=text]:focus {
     }
 }
 
-/*@media (max-width: 767px) {
+@media (max-width: 767px) {
     .fullscreen-bg {
       background: url('/img/main/bg.png') center center / cover no-repeat;
     }
