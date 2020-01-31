@@ -1,14 +1,5 @@
 
 /* General */
-.main-bg {
-    background-image:url(/img/main/bg.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #16141A;
-    display: block;
-}
 
 .global-font-color {
     color: grey;
@@ -16,6 +7,16 @@
 
 .index-logo {
     max-width: 80%;
+}
+
+.stream-bg {
+    background-image:url(/img/main/streaming/bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #16141A;
+    display: block;
 }
 
 .dev-bg {
@@ -144,6 +145,18 @@ hr {
 
 .navbar-dev.scrolled {
     background-color: rgba(74, 26, 170, 0.5);
+    border-radius: 1px;
+    transition: top 0.3s;
+}
+
+.navbar-stream {
+    background-color: rgba(170, 26, 26, 0.5);
+    border-radius: 1px;
+    transition: top 0.3s;
+}
+
+.navbar-stream.scrolled {
+    background-color: rgba(170, 26, 26, 0.5);
     border-radius: 1px;
     transition: top 0.3s;
 }
