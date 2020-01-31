@@ -234,6 +234,10 @@ a:active {
     padding-top: 100px;
 }
 
+.pull-down-footer {
+    padding-top: 10px;
+}
+
 .pull-up {
     margin-top: -100px;
 }
