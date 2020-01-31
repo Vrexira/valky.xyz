@@ -14,8 +14,22 @@
     color: grey;
 }
 
+.index-logo {
+    max-width: 80%;
+}
+
+.dev-bg {
+    background-image:url(/img/main/dev/bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #16141A;
+    display: block;
+}
+
 .valk-bg {
-    background-image:url(/img/main/valkyria/bg.png);
+    background-image:url(/img/main/valkyria/bg_head.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -50,6 +64,41 @@ hr {
     width: 50%;
 }
 
+.overlay-color {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.timeline-image {
+    max-width: 80%;
+	border: 1px solid white;
+}
+
+
+/* Spoiler */
+.spoiler {
+    box-shadow: none !important;
+}
+
+.spoiler-button {
+    background-color: rgb(104, 104, 104);
+    border: 1px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.spoiler-button:hover {
+    background-color: rgb(104, 104, 104);
+    color: white;
+    cursor: pointer;
+}
+
 
 /* Nav Bar */
 #navbar {
@@ -63,26 +112,38 @@ hr {
     transition: top 0.3s;
 }
 
-.navbar {
+.navbar-main {
     background-color: rgba(0, 87, 61, 0.5);
     border-radius: 1px;
     transition: top 0.3s;
 }
 
-.navbar.scrolled {
+.navbar-main.scrolled {
     background-color: rgba(0, 87, 61, 0.5);
     border-radius: 1px;
     transition: top 0.3s;
 }
 
 .navbar-valk {
-    background-color: #16141A;
+    background-color: rgba(22, 20, 26, 0.5);
     border-radius: 1px;
     transition: top 0.3s;
 }
 
 .navbar-valk.scrolled {
-    background-color: #16141A;
+    background-color: rgba(22, 20, 26, 0.5);
+    border-radius: 1px;
+    transition: top 0.3s;
+}
+
+.navbar-dev {
+    background-color: rgba(74, 26, 170, 0.5);
+    border-radius: 1px;
+    transition: top 0.3s;
+}
+
+.navbar-dev.scrolled {
+    background-color: rgba(74, 26, 170, 0.5);
     border-radius: 1px;
     transition: top 0.3s;
 }
@@ -146,6 +207,10 @@ a:active {
 
 .pull-down {
     padding-top: 20px;
+}
+
+.pull-down-nav-text {
+    padding-top: 15px;
 }
 
 .pull-down-nav {
@@ -258,6 +323,12 @@ input[type=text]:focus {
 	border: 1px solid white;
 }
 
+.dev-player {
+    max-width: 80%;
+	margin: 0 auto;
+	border: 1px solid white;
+}
+
 .valk-player-remover {
     background-image:url(/img/controls/remover_vid.png);
     background-repeat:no-repeat;
@@ -295,6 +366,21 @@ input[type=text]:focus {
     height:20%;
     position:absolute;
     left:80%;
+    right:0%;
+    top:58%;
+    bottom:0%;
+    margin:auto;
+    background-size:contain;
+    background-position: center;
+}
+
+.dev-player-mark {
+    background-image:url(/img/controls/mark_dev.png);
+    background-repeat:no-repeat;
+    width:20%;
+    height:20%;
+    position:absolute;
+    left:60%;
     right:0%;
     top:58%;
     bottom:0%;
