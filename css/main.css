@@ -1,6 +1,6 @@
 
 /* General */
-body {
+.main-bg {
     background-image:url(/img/main/bg.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -14,8 +14,18 @@ body {
     color: grey;
 }
 
+.valk-bg {
+    background-image:url(/img/main/valk_bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #16141A;
+    display: block;
+}
+
 .head-bg {
-    background-image:url(/img/main/head_bg.png);
+    background-image:url(/img/main/valk_bg_head.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
