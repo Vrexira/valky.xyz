@@ -559,7 +559,10 @@ input[type=text]:focus {
         height: 100%;
     }
 }
+
+
 /*
+
 @media (min-aspect-ratio: 16/9) {
     .fullscreen-bg__video {
       height: 300%;
@@ -582,4 +585,6 @@ input[type=text]:focus {
     .fullscreen-bg__video {
       display: none;
     }
-}*/
+}
+
+*/
