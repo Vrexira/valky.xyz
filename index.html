@@ -56,12 +56,12 @@
     <!-- ------ -->
     <!-- Basics -->
     <!-- ------ -->
-    <link rel="icon" href="/img/main/logo128.png">
-    <title>Project Valkyria</title>
+    <link rel="icon" href="/img/main/logo.png">
+    <title>Valky</title>
 
 </head>
 
-<body>
+<body class="">
 
     <!-- ----------- -->
     <!-- back to top -->
@@ -84,15 +84,15 @@
                 </button>
 
                 <!-- logo -->
-                <a class="navbar-brand" href="https://valky.xyz"><img src="/img/main/logored.png" class="nav-logo image-center"></a>
+                <a class="navbar-brand" href="https://valky.xyz/index"><img src="/img/main/logo_long.png" class="nav-logo image-center"></a>
 
                 <!-- pages -->
                 <div class="collapse navbar-collapse main-text text-center" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link global-font-color" href="/history">History</a>
-                        <a class="nav-item nav-link global-font-color" href="/chars">Characters</a>
-                        <a class="nav-item nav-link global-font-color" href="/animations">Animations</a>
-                        <a class="nav-item nav-link global-font-color" href="/render">Web Render</a>
+                        <a class="nav-item nav-link global-font-color" href="/valkyria/index">Project: Valkyria</a>
+                        <!--<a class="nav-item nav-link global-font-color" href="/valkyria/chars">Characters</a>
+                        <a class="nav-item nav-link global-font-color" href="/valkyria/animations">Animations</a>
+                        <a class="nav-item nav-link global-font-color" href="/valkyria/render">Web Render</a>-->
                     </div>
                 </div>
 
@@ -106,15 +106,22 @@
     <!-- ---------- -->
     <!-- head video -->
     <!-- ---------- -->
-    <div class="">
 
-        <div class="head-bg">
 
-            <div class="container pull-down-main">
+
+    <div class="fullscreen-bg">
+        
+        <video loop muted autoplay poster="" class="fullscreen-bg__video">
+            <source src="/img/main/bg.webm" type="video/webm">
+        </video>
+
+        <div class="">
+
+            <div class="container pull-down">
                 <div class="row">
 
 
-                    <!-- Title -->
+                    <!-- Title --
                     <div class="col-sm pull-down-main">
                         <div class="valk-wrapper text-center">
                             <img src="/img/main/logo128.png" class="">
@@ -128,36 +135,35 @@
                                 <br><b>Goddess of Freedom</b>
                             </p>
                         </div>
-                    </div>
+                    </div>-->
 
                     <!-- VALKY -->
-                    <div class="col-sm pull-up-head">
+                    <div class="">
                         <a-scene 
                             position="0 0 180" 
                             vr-mode-ui="enabled: false" 
                             renderer="antialias: true;
                                     sortObjects: true;
-                                    logarithmicDepthBuffer: true;"
-                            embedded>
+                                    logarithmicDepthBuffer: true;">
                 
                             <a-assets>
                                 <a-asset-item 
-                                    id="glb_anim" 
-                                    src="/obj/anim/idle.glb">
+                                    id="glb_char" 
+                                    src="/obj/hunter.glb">
                                 </a-asset-item>
                             </a-assets>
                 
                             <a-entity>
                                 <a-entity 
                                     look-controls
-                                    id="anim" 
-                                    gltf-model="#glb_anim"
+                                    id="char" 
+                                    gltf-model="#glb_char"
                                     material="alphaTest: 0.5"
                                     animation-mixer>
                                 </a-entity>
                                 <a-entity>
                                     <a-camera 
-                                        position="-2 24.1 36.1"
+                                        position="-2 20.1 36.1"
                                         rotation="0 0 0"
                                         look-controls="enabled:false">
                                     </a-camera>
@@ -167,35 +173,21 @@
                         </a-scene>
                     </div>
 
-                    <!-- Introduction -->
+                    <!-- Introduction --
                     <div class="col-sm">
-                        <div class=" main-text text-center">
+                        <div class="main-text text-center">
                             <p>
-                                <br>Good day dear visitor, I am <b>Valky</b>!
-                                <br>
-                                <br>I am a 3D Custom Model and got created in 3DS Max 2020, but my artificer is living in Switzerland.
-                                <br>
-                                <br>My world is a planet called Arborea, and I am here because of <b>Project Valkyria</b> - a browser based game the author of my being is working on.
-                                    If everything works well, you will be able to choose a character and select your favorite clothes. You can then spawn on a virtual world where you
-                                    will be able to walk and run around, and use animations as a kind of emotes.
-                                <br> 
-                                <br>If you would like to see and know more about me and Project Valkyria, you can click on the links above to see me with some diffrent clothes 
-                                    and some animations. You can also read through the history of me and my race, the Castanic.
-                                <br>
-                                <br>To inspect me in a full 360 degree view, please use the Web Render - it is also VR compatible :>
-                                <br>
-        
-                                <br>
+                                
                             </p>
                         </div>
-                    </div>
+                    </div>-->
 
 
                 </div>
             </div>
             
 
-            <!-- horizontal space -->
+            <!-- horizontal space --
             <div class="container pull-down">
                 <div class="row">
         
@@ -206,33 +198,33 @@
                     </div>
         
                 </div>
-            </div>
+            </div>-->
 
     
 
             <!-- -------------- -->
             <!-- footer content -->
             <!-- -------------- -->
-            <footer>
+            <footer class="fixed-bottom">
                 <div class="container">
                     <hr>
                     <div class="row">
         
                         <div class="col-sm">
                             <div class="global-font-color text-center">
-                                <a href="https://twitter.com/valkycodes" target="_blank">© 2019 Valky</a> · All Rights Reserved
+                                <a href="https://twitter.com/valkydev" target="_blank">2020 © Valky Dev</a>
                             </div>
                         </div>
         
                         <div class="col-sm">
                             <div class="global-font-color text-center">
-                                <a href="#top" class="global-font-color">Back to top</a>
+                                <a href="#top" class="global-font-color"></a>
                             </div>
                         </div>
         
                         <div class="col-sm">
                             <div class="global-font-color text-center">
-                                <a href="https://dev.valky.xyz" target="_blank">Developer Portal</a>
+                                <a href="https://dev.valky.xyz" target="_blank">VALK-AI-V0001</a>
                             </div>
                         </div>
         
