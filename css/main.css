@@ -15,7 +15,7 @@ body {
 }
 
 .head-bg {
-    background-image:url(/img/main/bg.webm);
+    background-image:url(/img/main/head_bg.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -60,6 +60,18 @@ hr {
 }
 
 .navbar.scrolled {
+    background-color: rgba(0, 87, 61, 0.5);
+    border-radius: 1px;
+    transition: top 0.3s;
+}
+
+.navbar-valk {
+    background-color: #16141A;
+    border-radius: 1px;
+    transition: top 0.3s;
+}
+
+.navbar-valk.scrolled {
     background-color: #16141A;
     border-radius: 1px;
     transition: top 0.3s;
@@ -124,6 +136,10 @@ a:active {
 
 .pull-down {
     padding-top: 20px;
+}
+
+.pull-down-nav {
+    padding-top: 10px;
 }
 
 .pull-down-main {
