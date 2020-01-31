@@ -546,6 +546,19 @@ input[type=text]:focus {
     height: 100%;
 }
 
+
+/*
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+      background: url('/img/main/bg.png') center center / cover no-repeat;
+    }
+  
+    .fullscreen-bg__video {
+      display: none;
+    }
+}
+
 @media (min-aspect-ratio: 16/9) {
     .fullscreen-bg__video {
       width: 100%;
@@ -560,8 +573,7 @@ input[type=text]:focus {
     }
 }
 
-
-/*
+*/
 
 @media (min-aspect-ratio: 16/9) {
     .fullscreen-bg__video {
@@ -576,15 +588,3 @@ input[type=text]:focus {
         left: -100%;
     }
 }
-
-@media (max-width: 767px) {
-    .fullscreen-bg {
-      background: url('/img/main/bg.png') center center / cover no-repeat;
-    }
-  
-    .fullscreen-bg__video {
-      display: none;
-    }
-}
-
-*/
