@@ -18,6 +18,44 @@ html, body {
     max-width: 80%;
 }
 
+.home-logo {
+    max-width: 50%;
+}
+
+.image-row {
+    background-color: rgba(0, 13, 87, 0.5);
+    border: 2px solid rgb(0, 13, 87);
+    border-radius: 10px;
+}
+
+.image-card {
+    background-color: rgba(0, 13, 87, 0.5);
+    border: 2px solid rgb(0, 13, 87);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.image-card-text {
+    max-width: 80%;
+}
+
+.image-card-logo {
+    max-width: 50%;
+}
+
+.main-bg {
+    background-image:url(/img/main/bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #16141A;
+    display: block;
+}
+
 .stream-bg {
     background-image:url(/img/main/streaming/bg.png);
     background-repeat: no-repeat;
@@ -122,14 +160,26 @@ hr {
     transition: top 0.3s;
 }
 
-.navbar-main {
+.navbar-ai {
     background-color: rgba(0, 87, 61, 0.5);
     border-radius: 1px;
     transition: top 0.3s;
 }
 
-.navbar-main.scrolled {
+.navbar-ai.scrolled {
     background-color: rgba(0, 87, 61, 0.5);
+    border-radius: 1px;
+    transition: top 0.3s;
+}
+
+.navbar-main {
+    background-color: rgba(0, 13, 87, 0.5);
+    border-radius: 1px;
+    transition: top 0.3s;
+}
+
+.navbar-main.scrolled {
+    background-color: rgba(0, 13, 87, 0.5);
     border-radius: 1px;
     transition: top 0.3s;
 }
@@ -476,6 +526,12 @@ textarea[type=text]:focus {
 	border: 1px solid white;
 }
 
+.main-player {
+    max-width: 100%;
+	margin: 0 auto;
+	border: 1px solid white;
+}
+
 .valk-player-remover {
     background-image:url(/img/controls/remover_vid.png);
     background-repeat:no-repeat;
@@ -507,7 +563,7 @@ textarea[type=text]:focus {
 }
 
 .valk-player-mark {
-    background-image:url(/img/controls/mark.png);
+    background-image:url(/img/controls/mark_valk.png);
     background-repeat:no-repeat;
     width:20%;
     height:20%;
@@ -528,6 +584,21 @@ textarea[type=text]:focus {
     height:20%;
     position:absolute;
     left:60%;
+    right:0%;
+    top:58%;
+    bottom:0%;
+    margin:auto;
+    background-size:contain;
+    background-position: center;
+}
+
+.main-player-mark {
+    background-image:url(/img/controls/mark.png);
+    background-repeat:no-repeat;
+    width:20%;
+    height:20%;
+    position:absolute;
+    left:80%;
     right:0%;
     top:58%;
     bottom:0%;
@@ -674,6 +745,11 @@ textarea[type=text]:focus {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.full-fg {
+  background: url('/img/controls/remover_vid.png') center center / cover no-repeat;
+  height: 100%;
 }
 
 

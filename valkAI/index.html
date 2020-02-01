@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- --------- -->
+    <!-- Meta Tags -->
+    <!-- --------- -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Valky AI - Talk with her :>">
+    <meta property="og:description" content="Valky AI - Talk with her :>">
+    <meta property="og:url" content="https://valky.xyz/valkAI/index">
+    <meta property="og:title" content="Valky AI">
+    <meta property="og:type" content="object">
+    <meta property="og:site_name" content="Luna: Valky AI">
+    <meta property="og:image" content="https://valky.xyz/img/main/valkAI/logo.png">
+
+
+
+    <!-- --- -->
+    <!-- CSS -->
+    <!-- --- -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+
+    
+
+    <!-- ---------- -->
+    <!-- JavaScript -->
+    <!-- ---------- -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- navbar -->
+    <script src="/scripts/scroll.js"></script>
+
+    <!-- render -->
+    <script src="/scripts/renderai.js"></script>
+
+    <!-- A-Frame -->
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    
+    <!-- A-Extras -->
+    <script src="https://cdn.jsdelivr.net/npm/aframe-extras@6.0.1/dist/aframe-extras.min.js"></script>
+
+    <!-- chat -->
+    <script src="/scripts/ai/chatSend.js"></script>
+
+
+
+    <!-- ------ -->
+    <!-- Basics -->
+    <!-- ------ -->
+    <link rel="icon" href="/img/main/valkAI/logo.png">
+    <title>Valky AI</title>
+
+</head>
+
+<body class="main-bg">
+
+    <!-- ----------- -->
+    <!-- back to top -->
+    <!-- ----------- -->
+    <div id="top"><a name='top'></a></div>
+    
+
+    <!-- background -->
+    <div class="fullscreen-bg">
+        
+        <video loop muted autoplay poster="" class="fullscreen-bg__video">
+            <source src="/img/main/valkAI/bg.webm" type="video/webm">
+        </video>
+
+    </div>
+
+
+
+    <!-- ------ -->
+    <!-- navbar -->
+    <!-- ------ -->
+    <nav class="navbar navbar-ai navbar-expand-lg navbar-dark sticky-top" id="navbar">
+        <div class="container">
+
+            <div class="row">
+
+                <!-- burger -->
+                <button class="navbar-toggler pull-down-nav-text" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- home -->
+                <a class="navbar-brand" href="/index">
+                    <img src="/img/controls/home_white.png" class="nav-logo image-center" alt="Home">
+                </a>
+
+
+                <!-- pages -->
+                <div class="collapse navbar-collapse main-text text-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                    
+                        <!-- logo -->
+                        <a class="nav-item nav-link global-font-color" href="/valkAI/index"><img src="/img/main/valkAI/logo_long.png" class="nav-logo image-center" alt="VAI: Valky AI"></a>
+                    
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    
+    <!-- ------- -->
+    <!-- Content -->
+    <!-- ------- -->
+
+    <!-- main -->
+    <div class="container">
+
+
+        <!-- AI render -->
+        <div class="row align-items-top">
+
+
+            <!-- VALKY -->
+            <div class="col-sm">
+                <a-scene 
+                    position="0 0 180" 
+                    vr-mode-ui="enabled: false" 
+                    renderer="antialias: true;
+                            sortObjects: true;
+                            logarithmicDepthBuffer: true;"
+                            >
+        
+                    <a-assets>
+                        <a-asset-item 
+                            id="ai_char" 
+                            src="/obj/undefined.glb">
+                        </a-asset-item>
+                    </a-assets>
+        
+                    <a-entity>
+                        <a-entity 
+                            look-controls="enabled:false"
+                            id="char" 
+                            gltf-model="#ai_char"
+                            material="alphaTest: 0.5"
+                            animation-mixer>
+                        </a-entity>
+                        <a-entity>
+                            <a-camera 
+                                position="-2 29.1 36.1"
+                                rotation="-10 -4.5 0"
+                                look-controls="enabled:false">
+                            </a-camera>
+                            <!--<a-camera 
+                                position="-2 24.1 36.1"
+                                rotation="0 0 0"
+                                look-controls="enabled:false">
+                            </a-camera>-->
+                        </a-entity>
+                    </a-entity>
+        
+                </a-scene>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="fixed-bottom">
+
+            
+
+            <!-- ------------- -->
+            <!-- Input Content -->
+            <!-- ------------- -->
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-sm-8">
+                    </div>
+                    
+                    <!-- input box -->
+                    <div class="col-sm-4 chat-box">
+                        <div class="main-text">
+
+                            <div class="message-box" id="messageBox">
+                            </div>
+
+                            <hr>
+
+                            <div class="input-box">
+
+                                <!-- text area -->
+                                <div class="">
+                                    <textarea class="chat-box" type="text" id="chatTextarea" rows="1" placeholder="Enter Message" name="message"></textarea>
+                                </div>
+
+
+                                <!-- buttons -->
+                                <div class="row">
+                                    
+                                    <!-- send message -->
+                                    <div class="col">
+                                        <button class="ai-button" id="chat-button" onclick="showtext()">Chat</button>
+                                    </div>
+                                    
+                                    <!-- open settings -->
+                                    <div class="col pull-right">
+                                        <button class="ai-button" id="chat-settings"><img src="/img/controls/settings.png" class="setting-icon"></button>
+                                    </div>
+
+                                </div>
+                                    
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="pull-down"></div>
+
+            
+
+            <!-- -------------- -->
+            <!-- footer content -->
+            <!-- -------------- -->
+            <footer class="navbar-ai">
+                <div class="container">
+                    <div class="row">
+        
+                        <div class="col-sm">
+                            <div class="global-font-color text-center pull-down">
+                                <a href="https://twitter.com/valkydev" target="_blank">2020 © Valky Dev</a>
+                            </div>
+                        </div>
+        
+                        <div class="col-sm">
+                            <div class="global-font-color text-center pull-down-footer">
+                                <a href="#top" class="global-font-color"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm">
+                            <div class="row pull-down-footer">
+                                <!-- logo -->
+                                <a class="text-center" href="/valkAI/index"><img src="/img/main/valkAI/logo.png" class="nav-logo image-center" alt="VAI: Valky AI"></a>
+                                <a class="text-center" href="/valkyria/index"><img src="/img/main/valkyria/logo.png" class="nav-logo image-center" alt="Project: Valkyria"></a>
+                                <a class="text-center" href="/devportal/index"><img src="/img/main/dev/logo.png" class="nav-logo image-center" alt="Dev Portal"></a>
+                                <a class="text-center" href="/streaming/index"><img src="/img/main/streaming/logo.png" class="nav-logo image-center" alt="Valky Streams"></a>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="row pull-down-footer"></div>
+                </div>
+            </footer>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
