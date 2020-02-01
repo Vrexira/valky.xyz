@@ -5,7 +5,7 @@ function answers(msgNeutral) {
 
     if (msgNeutral.toLowerCase().includes("hello")) {
         var textAI = "Hello!";
-    } 
+    }
     
     else {
         var textAI = "Lorem Ipsum";
