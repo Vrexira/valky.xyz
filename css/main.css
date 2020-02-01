@@ -1,6 +1,15 @@
 
 /* General */
 
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+
+.chat-box {
+    width: 100%;
+}
+
 .global-font-color {
     color: grey;
 }
@@ -166,6 +175,11 @@ hr {
     display: block;
 }
 
+.setting-icon {
+    height: 27px;
+    display: block;
+}
+
 
 /* Main */
 .main-title {
@@ -177,14 +191,12 @@ hr {
 }
 
 .main-text {
-    position: relative;
     font-size: 1.1em;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .main-text-head {
-    position: relative;
     font-size: 1.5em;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -216,6 +228,14 @@ a:active {
 /* Puller */
 .pull-center {
     text-align: center;
+}
+
+.pull-right {
+    text-align: right;
+}
+
+.pull-left {
+    padding-right: 60px;
 }
 
 .pull-down {
@@ -253,20 +273,81 @@ a:active {
 
 /* Input Text */
 input[type=text] {
-    text-align: center;
-    border: 2px solid #FA9C1E;
+    text-align: left;
+    border: 2px solid rgb(0, 87, 61);
     border-radius: 4px;
     padding: 12px 12px;
     margin: 8px 0;
     box-sizing: border-box;
-    outline: none;
-    color: #FA9C1E;
-    background-color: #4D4C4E;
+    outline: none !important;
+    color: white;
+    background-color: rgba(0, 87, 61, 0.5);
 }
 
 input[type=text]:focus {
-    border: 2px solid #CE7F18;
-    color: #CE7F18;
+    border: 2px solid rgb(0, 87, 61);
+    color: white;
+    background-color: rgba(0, 87, 61, 0.5);
+    outline:none !important;
+}
+
+textarea[type=text] {
+    text-align: left;
+    border: 2px solid rgb(0, 87, 61);
+    border-radius: 4px;
+    padding: 12px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline: none !important;
+    color: white;
+    background-color: rgba(0, 87, 61, 0.5);
+}
+
+textarea[type=text]:focus {
+    border: 2px solid rgb(0, 87, 61);
+    color: white;
+    background-color: rgba(0, 87, 61, 0.5);
+    outline:none !important;
+}
+
+
+/* Chat 00FFCC */
+.chat-answer-user {
+    background-color: rgba(0, 87, 61, 0.5);
+    border: 2px solid rgb(0, 87, 61);
+    color: white;
+    padding: 5px 10px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline:none !important;
+}
+
+.chat-answer-ai {
+    background-color: rgba(0, 255, 204, 0.5);
+    border: 2px solid #00FFCC;
+    color: white;
+    padding: 5px 10px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline:none !important;
+}
+
+.message-box-user {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.message-box-ai {
+    text-align: left;
+    padding-top: 10px;
 }
 
 
@@ -309,19 +390,68 @@ input[type=text]:focus {
     text-decoration: none;
     display: inline-block;
     font-size: 19px;
-    border-radius: 8px;
+    border-radius: 4px;
     cursor: pointer;
+    outline:none !important;
 }
 
 .valky-button:hover {
     background-color: rgb(104, 104, 104);
     color: white;
     cursor: pointer;
+    outline:none !important;
 }
 
 .valky-button:focus {
-    outline:0;
+    outline:none !important;
 }
+
+
+.ai-button {
+    background-color: rgba(0, 87, 61, 0.5);
+    border: 2px solid rgb(0, 87, 61);
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline:none !important;
+}
+
+.ai-button:hover {
+    background-color: rgba(1, 65, 45, 0.5);
+    border: 2px solid rgb(0, 87, 61);
+    color: white;
+    cursor: pointer;
+    outline:none !important;
+}
+
+.ai-button:focus {
+    background-color: rgba(0, 87, 61, 0.5);
+    border: 2px solid rgb(0, 87, 61);
+    outline:none !important;
+}
+
+
+
+/* placeholder */
+::-webkit-input-placeholder { /* Edge */
+    color: white;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+
+
 
 
 /* Valky Wrapper */

@@ -51,6 +51,9 @@
     <!-- A-Extras -->
     <script src="https://cdn.jsdelivr.net/npm/aframe-extras@6.0.1/dist/aframe-extras.min.js"></script>
 
+    <!-- chat -->
+    <script src="/scripts/ai/chatSend.js"></script>
+
 
 
     <!-- ------ -->
@@ -79,7 +82,7 @@
             <div class="row">
 
                 <!-- burger -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler pull-down-nav-text" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -102,115 +105,134 @@
 
 
     
-    <!-- ---------- -->
-    <!-- head video -->
-    <!-- ---------- -->
+    <!-- ------- -->
+    <!-- Content -->
+    <!-- ------- -->
 
-
-
+    <!-- background -->
     <div class="fullscreen-bg">
         
         <video loop muted autoplay poster="" class="fullscreen-bg__video">
             <source src="/img/main/bg.webm" type="video/webm">
         </video>
 
-        <div class="">
+    </div>
 
-            <div class="container pull-down-main">
+    <!-- main -->
+    <div class="container">
+
+
+        <!-- AI render -->
+        <div class="row align-items-top">
+
+
+            <!-- VALKY -->
+            <div class="col-sm">
+                <a-scene 
+                    position="0 0 180" 
+                    vr-mode-ui="enabled: false" 
+                    renderer="antialias: true;
+                            sortObjects: true;
+                            logarithmicDepthBuffer: true;"
+                            >
+        
+                    <a-assets>
+                        <a-asset-item 
+                            id="ai_char" 
+                            src="/obj/undefined.glb">
+                        </a-asset-item>
+                    </a-assets>
+        
+                    <a-entity>
+                        <a-entity 
+                            look-controls="enabled:false"
+                            id="char" 
+                            gltf-model="#ai_char"
+                            material="alphaTest: 0.5"
+                            animation-mixer>
+                        </a-entity>
+                        <a-entity>
+                            <a-camera 
+                                position="-2 29.1 36.1"
+                                rotation="-10 -4.5 0"
+                                look-controls="enabled:false">
+                            </a-camera>
+                            <!--<a-camera 
+                                position="-2 24.1 36.1"
+                                rotation="0 0 0"
+                                look-controls="enabled:false">
+                            </a-camera>-->
+                        </a-entity>
+                    </a-entity>
+        
+                </a-scene>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="fixed-bottom">
+
+            
+
+            <!-- ------------- -->
+            <!-- Input Content -->
+            <!-- ------------- -->
+            <div class="container">
                 <div class="row">
-
-
-                    <!-- Logo --
-                    <div class="col-sm pull-down-main">
-                        <div class="valk-wrapper text-center">
-                            <img src="/img/main/logo.png" class="">
-                        </div>
-                        <div class="valk-wrapper main-text-head text-center pull-down">
-                            <h1>Welcome!</h1>
-                            <p>
-                                <br>VAI: Valky AI
-                                <br>Project: Valkyria
-                                <br>Game Modifications
-                                <br>Website Development
-                                <br>VSS: Valky Stream Service
-                            </p>
-                        </div>
-                    </div>-->
-
-                    <!-- VALKY -->
-                    <div class="col-sm">
-                        <a-scene 
-                            position="0 0 180" 
-                            vr-mode-ui="enabled: false" 
-                            renderer="antialias: true;
-                                    sortObjects: true;
-                                    logarithmicDepthBuffer: true;">
-                
-                            <a-assets>
-                                <a-asset-item 
-                                    id="ai_char" 
-                                    src="/obj/undefined.glb">
-                                </a-asset-item>
-                            </a-assets>
-                
-                            <a-entity>
-                                <a-entity 
-                                    look-controls="enabled:false"
-                                    id="char" 
-                                    gltf-model="#ai_char"
-                                    material="alphaTest: 0.5"
-                                    animation-mixer>
-                                </a-entity>
-                                <a-entity>
-                                    <a-camera 
-                                        position="-2 29.1 36.1"
-                                        rotation="-10 -4.5 0"
-                                        look-controls="enabled:false">
-                                    </a-camera>
-                                    <!--<a-camera 
-                                        position="-2 24.1 36.1"
-                                        rotation="0 0 0"
-                                        look-controls="enabled:false">
-                                    </a-camera>-->
-                                </a-entity>
-                            </a-entity>
-                
-                        </a-scene>
+                    
+                    <div class="col-sm-8">
                     </div>
+                    
+                    <!-- input box -->
+                    <div class="col-sm-4 chat-box">
+                        <div class="main-text">
 
-                    <!-- chat -->
-                    <div class="col-sm">
-                        <div class="main-text text-center">
-                            <div class="message-box">
-                                
+                            <div class="message-box" id="messageBox">
+                            </div>
+
+                            <hr>
+
+                            <div class="input-box">
+
+                                <!-- text area -->
+                                <div class="">
+                                    <textarea class="chat-box" type="text" id="chatTextarea" rows="1" placeholder="Enter Message" name="message"></textarea>
+                                </div>
+
+                                <!-- buttons -->
+                                <div class="row">
+                                    
+                                    <!-- send message -->
+                                    <div class="col">
+                                        <button class="ai-button" id="chat-button" onclick="showtext()">Chat</button>
+                                    </div>
+                                    
+                                    <!-- open settings -->
+                                    <div class="col pull-right">
+                                        <button class="ai-button" id="chat-settings"><img src="/img/controls/settings.png" class="setting-icon"></button>
+                                    </div>
+
+                                </div>
+                                    
+
                             </div>
                         </div>
                     </div>
 
-
                 </div>
             </div>
+
+            <div class="pull-down"></div>
+
             
-
-            <!-- horizontal space --
-            <div class="container pull-down">
-                <div class="row">
-        
-                    <div class="col-sm">
-                        <div class="pull-down">
-                            <br><br><br><br><br><br>
-                        </div>
-                    </div>
-        
-                </div>
-            </div>-->
-
-    
 
             <!-- -------------- -->
             <!-- footer content -->
             <!-- -------------- -->
-            <footer class="fixed-bottom navbar-main">
+            <footer class="navbar-main">
                 <div class="container">
                     <div class="row">
         
@@ -242,10 +264,14 @@
             </footer>
 
 
-
         </div>
 
+
+
     </div>
+
+
+
 
 </body>
 
