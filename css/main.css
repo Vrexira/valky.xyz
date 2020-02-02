@@ -25,7 +25,6 @@ html, body {
 .image-row {
     background-color: rgba(0, 13, 87, 0.5);
     border: 2px solid rgb(0, 13, 87);
-    border-radius: 10px;
 }
 
 .image-card {
@@ -160,6 +159,10 @@ hr {
     margin-top: -10px;
     display: block;
     transition: top 0.3s;
+}
+
+.navbar-brand {
+    padding-left: 20px;
 }
 
 .navbar-ai {
