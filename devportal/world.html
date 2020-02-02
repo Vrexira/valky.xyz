@@ -50,6 +50,9 @@
     <!-- Movement, Camera -->
     <script src="/scripts/keycontrol.js"></script>
     <script src="/scripts/camcontrol.js"></script>
+    
+    <!-- navbar -->
+    <script src="/scripts/burgerX.js"></script>
 
     
 
@@ -73,18 +76,22 @@
     <!-- ------ -->
     <!-- navbar -->
     <!-- ------ -->
-    <nav class="navbar navbar-dev navbar-expand-lg navbar-dark sticky-top" id="navbar">
+    <nav class="navbar navbar-dev navbar-expand-lg sticky-top" id="navbar">
         <div class="container">
 
             <div class="row">
 
                 <!-- burger -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <div class="burger-x pull-down-nav" onclick="burgerX(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
                 </button>
 
                 <!-- home -->
-                <a class="navbar-brand" href="/index">
+                <a class="navbar-brand pull-down-nav" href="/index">
                     <img src="/img/controls/home_white.png" class="nav-logo image-center" alt="Home">
                 </a>
 
@@ -96,9 +103,9 @@
                 <!-- pages -->
                 <div class="collapse navbar-collapse main-text text-center" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link global-font-color pull-down-nav-text" href="/devportal/timeline">Timeline</a>
-                        <a class="nav-item nav-link global-font-color pull-down-nav-text" href="/devportal/bugs">Known Bugs</a>
-                        <a class="nav-item nav-link global-font-color pull-down-nav-text" href="/devportal/preview">Developer Preview</a>
+                        <a class="nav-item nav-link global-font-color pull-down-nav-text text-center" href="/devportal/timeline">Timeline</a>
+                        <a class="nav-item nav-link global-font-color pull-down-nav-text text-center" href="/devportal/bugs">Known Bugs</a>
+                        <a class="nav-item nav-link global-font-color pull-down-nav-text text-center" href="/devportal/preview">Developer Preview</a>
                     </div>
                 </div>
 

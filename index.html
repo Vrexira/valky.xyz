@@ -41,6 +41,7 @@
 
     <!-- navbar -->
     <script src="/scripts/scroll.js"></script>
+    <script src="/scripts/burgerX.js"></script>
 
 
 
@@ -66,23 +67,27 @@
     <!-- ------ -->
     <!-- navbar -->
     <!-- ------ -->
-    <nav class="navbar navbar-main navbar-expand-lg navbar-dark sticky-top" id="navbar">
+    <nav class="navbar navbar-main navbar-expand-lg sticky-top" id="navbar">
         <div class="container">
 
             <div class="row">
 
                 <!-- burger -->
-                <button class="navbar-toggler pull-down-nav-text" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="burger-x pull-down-nav" onclick="burgerX(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
                 </button>
 
                 <!-- home -->
-                <a class="navbar-brand" href="/index">
+                <a class="navbar-brand pull-down-nav" href="/index">
                     <img src="/img/controls/home_white.png" class="nav-logo image-center" alt="Home">
                 </a>
 
                 <!-- logo -->
-                <a class="pull-down-footer" href="/index">
+                <a class="pull-down-nav" href="/index">
                     <img src="/img/main/logowhite.png" class="nav-logo image-center" alt="Home">
                 </a>
 
@@ -92,19 +97,19 @@
                 <div class="collapse navbar-collapse main-text text-center" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
 
-                        <a class="nav-item nav-link global-font-color pull-down-nav-text text-center" href="/valkAI/index">
+                        <a class="nav-item nav-link global-font-color text-center pull-down-nav-text" href="/valkAI/index">
                             Luna: Valky AI
                         </a>
 
-                        <a class="nav-item nav-link global-font-color pull-down-nav-text text-center" href="/valkyria/index">
+                        <a class="nav-item nav-link global-font-color text-center pull-down-nav-text" href="/valkyria/index">
                             Project: Valkyria
                         </a>
 
-                        <a class="nav-item nav-link global-font-color pull-down-nav-text text-center" href="/devportal/index">
+                        <a class="nav-item nav-link global-font-color text-center pull-down-nav-text" href="/devportal/index">
                             Dev Portal
                         </a>
 
-                        <a class="nav-item nav-link global-font-color pull-down-nav-text text-center" href="/streaming/index">
+                        <a class="nav-item nav-link global-font-color text-center pull-down-nav-text" href="/streaming/index">
                             Valky Work
                         </a>
 
@@ -213,8 +218,8 @@
                         <div class="main-text text-center pull-down">
     
                             <p>
-                                The second project is a small kind of AI, artificial intelligence. You can meet and talk to Luna, a 3D character I made in 3DS Max.
-                                If all goes well, she will become an own Android App where you call talk to her and ask her everything about my work, how her day was and more.
+                                This project is a small kind of AI, artificial intelligence. You can meet and talk to Luna, a 3D character I made in 3DS Max.
+                                If all goes well, she will become an own Android App where you can talk to her and ask her everything about my work, how her day was and more.
                                 <br>
                                 <br><a href="/valkAI/index" class="global-font-color">You can find "Luna: Valky AI" here.</a>
                             </p>
@@ -239,7 +244,7 @@
                         <div class="main-text text-center pull-down">
 
                             <p>
-                                I have a two new projects I am working on, therefor i made my 3D character. If everything works like intended, 
+                                Luna, the 3D char used as AI, can be found here as well! If everything works like intended for this project, 
                                 you can choose my character on the website, choose clothes and spawn on a virtual world. All that based on a web browser, 
                                 called Project: Valkyria
                                 <br>

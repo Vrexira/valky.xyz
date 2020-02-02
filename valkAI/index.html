@@ -41,6 +41,7 @@
 
     <!-- navbar -->
     <script src="/scripts/scroll.js"></script>
+    <script src="/scripts/burgerX.js"></script>
 
     <!-- render -->
     <script src="/scripts/renderai.js"></script>
@@ -86,18 +87,22 @@
     <!-- ------ -->
     <!-- navbar -->
     <!-- ------ -->
-    <nav class="navbar navbar-ai navbar-expand-lg navbar-dark sticky-top" id="navbar">
+    <nav class="navbar navbar-ai navbar-expand-lg sticky-top" id="navbar">
         <div class="container">
 
             <div class="row">
 
                 <!-- burger --
-                <button class="navbar-toggler pull-down-nav-text" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="burger-x pull-down-nav" onclick="burgerX(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
                 </button>-->
 
                 <!-- home -->
-                <a class="navbar-brand" href="/index">
+                <a class="navbar-brand pull-down-nav" href="/index">
                     <img src="/img/controls/home_white.png" class="nav-logo image-center" alt="Home">
                 </a>
                     

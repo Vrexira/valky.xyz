@@ -46,18 +46,22 @@
     <!-- ------ -->
     <!-- navbar -->
     <!-- ------ -->
-    <nav class="navbar navbar-valk navbar-expand-lg navbar-dark sticky-top" id="navbar">
+    <nav class="navbar navbar-valk navbar-expand-lg sticky-top" id="navbar">
         <div class="container">
 
             <div class="row">
 
                 <!-- burger -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <div class="burger-x pull-down-nav" onclick="burgerX(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
                 </button>
 
                 <!-- home -->
-                <a class="navbar-brand" href="/index">
+                <a class="navbar-brand pull-down-nav" href="/index">
                     <img src="/img/controls/home_white.png" class="nav-logo image-center" alt="Home">
                 </a>
 
@@ -70,10 +74,10 @@
                 <div class="collapse navbar-collapse main-text text-center" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                 
-                        <a class="nav-item nav-link global-font-color pull-down-nav-text" href="/valkyria/history">History</a>
-                        <a class="nav-item nav-link global-font-color pull-down-nav-text" href="/valkyria/chars">Characters</a>
-                        <a class="nav-item nav-link global-font-color pull-down-nav-text" href="/valkyria/animations">Animations</a>
-                        <a class="nav-item nav-link global-font-color pull-down-nav-text" href="/valkyria/render">Web Render</a>
+                        <a class="nav-item nav-link global-font-color pull-down-nav-text text-center" href="/valkyria/history">History</a>
+                        <a class="nav-item nav-link global-font-color pull-down-nav-text text-center" href="/valkyria/chars">Characters</a>
+                        <a class="nav-item nav-link global-font-color pull-down-nav-text text-center" href="/valkyria/animations">Animations</a>
+                        <a class="nav-item nav-link global-font-color pull-down-nav-text text-center" href="/valkyria/render">Web Render</a>
                         
                     </div>
                 </div>
@@ -599,6 +603,7 @@
 
     <!-- navbar -->
     <script src="/scripts/scroll.js"></script>
+    <script src="/scripts/burgerX.js"></script>
 
     <!-- wrapper -->
     <script src="/scripts/views.js"></script>
