@@ -208,6 +208,12 @@ hr {
     transition: top 0.3s;
 }
 
+.navbar-collapse-ai.show {
+    background-color: rgba(0, 87, 61, 0.5);
+    border-radius: 1px;
+    width: 100%;
+}
+
 .navbar-main {
     background-color: rgba(0, 13, 87, 0.5);
     border-radius: 1px;
@@ -218,6 +224,12 @@ hr {
     background-color: rgba(0, 13, 87, 0.5);
     border-radius: 1px;
     transition: top 0.3s;
+}
+
+.navbar-collapse-main.show {
+    background-color: rgba(0, 13, 87, 0.5);
+    border-radius: 1px;
+    width: 100%;
 }
 
 .navbar-valk {
@@ -232,6 +244,12 @@ hr {
     transition: top 0.3s;
 }
 
+.navbar-collapse-valk.show {
+    background-color: rgba(22, 20, 26, 0.5);
+    border-radius: 1px;
+    width: 100%;
+}
+
 .navbar-dev {
     background-color: rgba(74, 26, 170, 0.5);
     border-radius: 1px;
@@ -244,6 +262,12 @@ hr {
     transition: top 0.3s;
 }
 
+.navbar-collapse-dev.show {
+    background-color: rgba(74, 26, 170, 0.5);
+    border-radius: 1px;
+    width: 100%;
+}
+
 .navbar-stream {
     background-color: rgba(170, 26, 26, 0.5);
     border-radius: 1px;
@@ -254,6 +278,12 @@ hr {
     background-color: rgba(170, 26, 26, 0.5);
     border-radius: 1px;
     transition: top 0.3s;
+}
+
+.navbar-collapse-stream.show {
+    background-color: rgba(170, 26, 26, 0.5);
+    border-radius: 1px;
+    width: 100%;
 }
 
 .nav-logo {
