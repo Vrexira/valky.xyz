@@ -1,0 +1,82 @@
+{
+
+
+    
+    "who":{
+        "are":{
+
+            "default":[
+                "I am your <b>L</b>inguistical <b>U</b>nbound <b>N</b>umeric <b>A</b>ssisstant, or in short, you can call me LUNA", 
+                "I am LUNA, your <b>L</b>inguistical <b>U</b>nbound <b>N</b>umeric <b>A</b>ssisstant. Nice to meet you!",
+                "Ohh I am sorry, I should've introduced myself! I am LUNA, your <b>L</b>inguistical <b>U</b>nbound <b>N</b>umeric <b>A</b>ssisstant. Nice to meet you!"
+            ]
+
+        }
+    },
+
+
+
+    "how":{
+        "are":{
+
+            "default":[
+                "Not bad, thanks!",
+                "Good, thanks.", 
+                "I am fine, thank you.",
+                "Great! Thanks for asking!",
+                "I am doing great! What about you?"
+            ],
+
+            "doing":[
+                "How am I doing what?"
+            ]
+
+        }
+    },
+
+
+
+    "what":{
+        "name":{
+
+            "default":[
+                "I am your <b>L</b>inguistical <b>U</b>nbound <b>N</b>umeric <b>A</b>ssisstant, or in short, you can call me LUNA", 
+                "I am LUNA, your <b>L</b>inguistical <b>U</b>nbound <b>N</b>umeric <b>A</b>ssisstant. Nice to meet you!",
+                "Ohh I am sorry, I should've introduced myself! I am LUNA, your <b>L</b>inguistical <b>U</b>nbound <b>N</b>umeric <b>A</b>ssisstant. Nice to meet you!"
+            ]
+
+        },
+        "favorit":{
+
+            "music":[
+                "I am listening to alot of diffrent music.", 
+                "My favorite music are the noises of floating data in the matrix.",
+                "Hmm... Good question... I am not sure if I should tell you that..."
+            ],
+
+            "food":[
+                "I only need electricity to life.", 
+                "There is no favorite food, even tho i like the sparkles of electricity very much.",
+                "I am just an AI, why should i need to eat?"
+            ]
+
+        }
+    },
+
+
+
+    "default":{
+        "default":{
+
+            "default":[
+                "I'm sorry, I didn't understand you... What's with me?", 
+                "What do you want to know about me?",
+                "I don't understand... I am sorry, you asked something about me?"
+            ]
+        
+        }
+    }
+
+
+
+}
