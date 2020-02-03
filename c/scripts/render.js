@@ -13,7 +13,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
         }
 
         if (sParameterName[1] === undefined) {
-            window.open("/404","_self");
+            window.open("/v/404","_self");
         }
 
     }
@@ -24,4 +24,4 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 var model = getUrlParameter('model');
 
-setTimeout(function(){ $("#valky_player").attr("src", "/obj/player/" + model + "_player.glb"); }, 200);
+setTimeout(function(){ $("#glb_clothes").attr("src", "/m/obj/" + model + ".glb"); }, 100);

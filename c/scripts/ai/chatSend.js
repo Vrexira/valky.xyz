@@ -181,9 +181,9 @@ function answers(msgNeutral) {
 
 
 
-    // ------ //
-    // THINGS //
-    // ------ //
+    // ---- //
+    // WHAT //
+    // ---- //
     else if (msgNeutral.toLowerCase().includes("what")) {
 
         // time
@@ -200,6 +200,47 @@ function answers(msgNeutral) {
             var textAI = answerChoosen;
     
         }
+
+    }
+
+
+
+
+
+    // ------- //
+    // SPECIAL //
+    // ------- //
+    else if (msgNeutral.toLowerCase() == "ᚡᛆᛚᚴᛦ" && Cookies.get('runic') == "1") {
+
+            // possible answers
+            var answerArray = [
+                "Ohh wow, hello master!", 
+                "Hello! <b>Hello! Hello Valky!</b>",
+                "You are finally here...",
+                "Valky, I'm glad you found your way to me!"
+            ]; 
+            
+            // choose answer
+            var answerChoosen = answerArray[(Math.random() * answerArray.length) | 0];
+            var textAI = answerChoosen;
+
+            Cookies.set("runic", "0")
+
+    }
+
+    else if (msgNeutral.toLowerCase() == "/runic") {
+
+            // possible answers
+            var answerArray = [
+                "ᚥᚼᛆᛐ ᛁᛌ ᛦᚮᚢᚱ ᛔᛆᛌᛌᚥᚮᚱᛑ ᛘᛆᛌᛐᛂᚱ",
+                "ᚥᛂᛚᛍᚮᛘᛂ ᛘᛆᛌᛐᛂᚱ ᚥᚼᛆᛐ ᛁᛌ ᛐᚼᛂ ᛌᛂᛍᚱᛂᛐ"
+            ]; 
+
+            Cookies.set("runic", "1", { expires: 1 })
+            
+            // choose answer
+            var answerChoosen = answerArray[(Math.random() * answerArray.length) | 0];
+            var textAI = answerChoosen;
 
     }
 
@@ -274,8 +315,23 @@ function showtext() {
     var elementEnd = "</div></div>";
 
     if (messageInput.value != "") {
-        showarea.innerHTML = showarea.innerHTML + (elementBox + elementStart + neutralized + elementEnd);
-        answers(neutralized);
+
+        if (neutralized == "/runic") {
+
+            showarea.innerHTML = showarea.innerHTML + (elementBox + elementStart + neutralized + elementEnd);
+            answers(neutralized);
+
+        }
+
+        else if (neutralized == "ᚡᛆᛚᚴᛦ") {
+            showarea.innerHTML = showarea.innerHTML + (elementBox + elementStart + neutralized + elementEnd);
+            answers(neutralized);
+        }
+
+        else {
+            showarea.innerHTML = showarea.innerHTML + (elementBox + elementStart + neutralized + elementEnd);
+            answers(neutralized);
+        }
     }
 
     messageInput.value = "";

@@ -83,7 +83,7 @@ hr {
 
 /* backgrounds */
 .main-bg {
-    background-image:url(/img/main/bg.png);
+    background-image:url(/m/img/main/bg.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -93,7 +93,7 @@ hr {
 }
 
 .stream-bg {
-    background-image:url(/img/main/streaming/bg.png);
+    background-image:url(/m/img/main/work/bg.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -103,7 +103,7 @@ hr {
 }
 
 .dev-bg {
-    background-image:url(/img/main/dev/bg.png);
+    background-image:url(/m/img/main/dev/bg.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -113,7 +113,7 @@ hr {
 }
 
 .valk-bg {
-    background-image:url(/img/main/valkyria/bg_head.png);
+    background-image:url(/m/img/main/valkyria/bg_head.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -123,7 +123,7 @@ hr {
 }
 
 .head-bg {
-    background-image:url(/img/main/valkyria/bg_head.png);
+    background-image:url(/m/img/main/valkyria/bg_head.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -597,7 +597,7 @@ textarea[type=text]:focus {
 }
 
 .valk-player-remover {
-    background-image:url(/img/controls/remover_vid.png);
+    background-image:url(/m/img/controls/remover_vid.png);
     background-repeat:no-repeat;
     width:100%;
     height:100%;
@@ -612,7 +612,7 @@ textarea[type=text]:focus {
 }
 
 .valk-player-logo {
-    background-image:url(/img/controls/play.png);
+    background-image:url(/m/img/controls/play.png);
     background-repeat:no-repeat;
     width:50%;
     height:50%;
@@ -627,7 +627,7 @@ textarea[type=text]:focus {
 }
 
 .valk-player-mark {
-    background-image:url(/img/controls/mark_valk.png);
+    background-image:url(/m/img/controls/mark_valk.png);
     background-repeat:no-repeat;
     width:20%;
     height:20%;
@@ -642,7 +642,7 @@ textarea[type=text]:focus {
 }
 
 .dev-player-mark {
-    background-image:url(/img/controls/mark_dev.png);
+    background-image:url(/m/img/controls/mark_dev.png);
     background-repeat:no-repeat;
     width:20%;
     height:20%;
@@ -657,7 +657,7 @@ textarea[type=text]:focus {
 }
 
 .main-player-mark {
-    background-image:url(/img/controls/mark.png);
+    background-image:url(/m/img/controls/mark.png);
     background-repeat:no-repeat;
     width:20%;
     height:20%;
@@ -674,7 +674,7 @@ textarea[type=text]:focus {
 
 /* Valky Viewer */
 .valk-view-remover {
-    background-image:url(/img/controls/remover_img.png);
+    background-image:url(/m/img/controls/remover_img.png);
     background-repeat:no-repeat;
     width:100%;
     height:100%;
@@ -689,7 +689,7 @@ textarea[type=text]:focus {
 }
 
 .valk-view-mark {
-    background-image:url(/img/controls/mark.png);
+    background-image:url(/m/img/controls/mark.png);
     background-repeat:no-repeat;
     width:20%;
     height:20%;
@@ -816,7 +816,7 @@ textarea[type=text]:focus {
 }
 
 .full-fg {
-    background: url('/img/controls/remover_vid.png') center center / cover no-repeat;
+    background: url('/m/img/controls/remover_vid.png') center center / cover no-repeat;
     height: 100%;
 }
 
@@ -825,7 +825,7 @@ textarea[type=text]:focus {
 
 @media (max-width: 767px) {
     .fullscreen-bg {
-      background: url('/img/main/bg.png') center center / cover no-repeat;
+      background: url('/m/img/main/bg.png') center center / cover no-repeat;
     }
   
     .fullscreen-bg__video {

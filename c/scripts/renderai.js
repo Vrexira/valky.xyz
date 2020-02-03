@@ -57,4 +57,4 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 var model = getUrlParameter('model');
 
-setTimeout(function(){ $("#ai_char").attr("src", "/obj/" + model + ".glb"); }, 100);
+setTimeout(function(){ $("#ai_char").attr("src", "/m/obj/" + model + ".glb"); }, 100);
