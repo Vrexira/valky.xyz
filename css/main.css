@@ -437,7 +437,6 @@ textarea[type=text]:focus {
     display: inline-block;
     font-size: 19px;
     border-radius: 4px;
-    cursor: pointer;
     outline:none !important;
 }
 
@@ -451,7 +450,6 @@ textarea[type=text]:focus {
     display: inline-block;
     font-size: 19px;
     border-radius: 4px;
-    cursor: pointer;
     outline:none !important;
 }
 
@@ -463,6 +461,7 @@ textarea[type=text]:focus {
 .message-box-ai {
     text-align: left;
     padding-top: 10px;
+    color: black;
 }
 
 
