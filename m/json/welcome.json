@@ -1,0 +1,17 @@
+[
+
+    {
+        "ID":"0",
+        "metakey":["hello", "hey", "hi", "greeting", "hallo"],
+        "message":[
+            "Hello there!", 
+            "Heya!",
+            "Hi",
+            "Hello",
+            "Oh, hey!"
+        ]
+    }
+
+
+
+]
