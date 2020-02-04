@@ -1,80 +1,63 @@
 {
 
-
-    
-    "who":{
-        "are":{
-
-            "default":[
-                "I am your <b>L</b>inguistical <b>U</b>nbound <b>N</b>umeric <b>A</b>ssisstant, or in short, you can call me LUNA", 
-                "I am LUNA, your <b>L</b>inguistical <b>U</b>nbound <b>N</b>umeric <b>A</b>ssisstant. Nice to meet you!",
-                "Ohh I am sorry, I should've introduced myself! I am LUNA, your <b>L</b>inguistical <b>U</b>nbound <b>N</b>umeric <b>A</b>ssisstant. Nice to meet you!"
-            ]
-
-        }
+    "0":{
+        "ID":"0",
+        "metakey":["you"],
+        "message":[
+            "I'm sorry, I didn't understand you... What's with me?", 
+            "What do you want to know about me?",
+            "I don't understand... I am sorry, you asked something about me?"
+        ]
     },
 
-
-
-    "how":{
-        "are":{
-
-            "default":[
-                "Not bad, thanks!",
-                "Good, thanks.", 
-                "I am fine, thank you.",
-                "Great! Thanks for asking!",
-                "I am doing great! What about you?"
-            ],
-
-            "doing":[
-                "How am I doing what?"
-            ]
-
-        }
+    "1":{
+        "ID":"1",
+        "metakey":["who", "are", "you", "what", "name"],
+        "message":[
+            "I am your <b>L</b>inguistical <b>U</b>nbound <b>N</b>umeric <b>A</b>ssisstant, or in short, you can call me LUNA", 
+            "I am LUNA, your <b>L</b>inguistical <b>U</b>nbound <b>N</b>umeric <b>A</b>ssisstant. Nice to meet you!",
+            "Ohh I am sorry, I should've introduced myself! I am LUNA, your <b>L</b>inguistical <b>U</b>nbound <b>N</b>umeric <b>A</b>ssisstant. Nice to meet you!"
+        ]
     },
 
-
-
-    "what":{
-        "name":{
-
-            "default":[
-                "I am your <b>L</b>inguistical <b>U</b>nbound <b>N</b>umeric <b>A</b>ssisstant, or in short, you can call me LUNA", 
-                "I am LUNA, your <b>L</b>inguistical <b>U</b>nbound <b>N</b>umeric <b>A</b>ssisstant. Nice to meet you!",
-                "Ohh I am sorry, I should've introduced myself! I am LUNA, your <b>L</b>inguistical <b>U</b>nbound <b>N</b>umeric <b>A</b>ssisstant. Nice to meet you!"
-            ]
-
-        },
-        "favorit":{
-
-            "music":[
-                "I am listening to alot of diffrent music.", 
-                "My favorite music are the noises of floating data in the matrix.",
-                "Hmm... Good question... I am not sure if I should tell you that..."
-            ],
-
-            "food":[
-                "I only need electricity to life.", 
-                "There is no favorite food, even tho i like the sparkles of electricity very much.",
-                "I am just an AI, why should i need to eat?"
-            ]
-
-        }
+    "2":{
+        "ID":"2",
+        "metakey":["how", "are", "you"],
+        "message":[
+            "Not bad, thanks!",
+            "Good, thanks.", 
+            "I am fine, thank you.",
+            "Great! Thanks for asking!",
+            "I am doing great! What about you?"
+        ]
     },
 
+    "3":{
+        "ID":"3",
+        "metakey":["how", "are", "you", "doing"],
+        "message":[
+            "How am I doing what?"
+        ]
+    },
 
+    "4":{
+        "ID":"4",
+        "metakey":["what", "you", "favorit", "favourit", "music"],
+        "message":[
+            "I am listening to alot of diffrent music.", 
+            "My favorite music are the noises of floating data in the matrix.",
+            "Hmm... Good question... I am not sure if I should tell you that..."
+        ]
+    },
 
-    "default":{
-        "default":{
-
-            "default":[
-                "I'm sorry, I didn't understand you... What's with me?", 
-                "What do you want to know about me?",
-                "I don't understand... I am sorry, you asked something about me?"
-            ]
-        
-        }
+    "5":{
+        "ID":"5",
+        "metakey":["what", "you", "favorit", "favourit", "food", "meal"],
+        "message":[
+            "I only need electricity to life.", 
+            "There is no favorite food, even tho i like the sparkles of electricity very much.",
+            "I am just an AI, why should i need to eat?"
+        ]
     }
 
 
