@@ -227,24 +227,42 @@ function answers(msgNeutral) {
         var answerChoosen = answerArray[(Math.random() * answerArray.length) | 0];
         var textAI = answerChoosen;
 
-}
+    }
 
-    // stop
+    
     else if (msgNeutral.toLowerCase() == "ᚡᛆᛚᚴᛦ" && Cookies.get('runic') == "1") {
 
-            // possible answers
-            var answerArray = [
-                "ᚮᚼᚼ ᚥᚮᚥ, ᚼᛂᛚᛚᚮ ᛘᛆᛌᛐᛂᚱ!", // Ohh wow, hello master!
-                "ᚼᛂᛚᛚᚮ! <b>ᚼᛂᛚᛚᚮ, ᚼᛂᛚᛚᚮ ᚡᛆᛚᚴᛦ!</b>", // Hello! Hello! Hello Valky!
-                "ᛦᚮᚢ ᛆᚱᛂ ᚠᛁᚿᛆᛚᛚᛦ ᚼᛂᚱᛂ...", //You are finally here
-                "ᚡᛆᛚᚴᛦ, ᛁ ᛆᛘ ᚵᛚᛆᛑ ᛦᚮᚢ ᚠᚮᚢᚿᛑ ᛦᚮᚢᚱ ᚥᛆᛦ ᛐᚮ ᛘᛂ!" //Valky, I'm glad you found your way to me!
-            ]; 
-            
-            // choose answer
-            var answerChoosen = answerArray[(Math.random() * answerArray.length) | 0];
-            var textAI = answerChoosen;
+        // possible answers
+        var answerArray = [
+            "ᚮᚼᚼ ᚥᚮᚥ, ᚼᛂᛚᛚᚮ ᛘᛆᛌᛐᛂᚱ!", // Ohh wow, hello master!
+            "ᚼᛂᛚᛚᚮ! <b>ᚼᛂᛚᛚᚮ, ᚼᛂᛚᛚᚮ ᚡᛆᛚᚴᛦ!</b>", // Hello! Hello! Hello Valky!
+            "ᛦᚮᚢ ᛆᚱᛂ ᚠᛁᚿᛆᛚᛚᛦ ᚼᛂᚱᛂ...", //You are finally here
+            "ᚡᛆᛚᚴᛦ, ᛁ ᛆᛘ ᚵᛚᛆᛑ ᛦᚮᚢ ᚠᚮᚢᚿᛑ ᛦᚮᚢᚱ ᚥᛆᛦ ᛐᚮ ᛘᛂ!" //Valky, I'm glad you found your way to me!
+        ]; 
+        
+        // choose answer 
+        var answerChoosen = answerArray[(Math.random() * answerArray.length) | 0];
+        var textAI = answerChoosen;
 
-            Cookies.set("runic", "0")
+        Cookies.set("runic", "0")
+        Cookies.set("admin", "0")
+
+    }
+
+    
+    else if (msgNeutral.toLowerCase() == "ᛆᛑᛘᛁᚿ" && Cookies.get('runic') == "1") {
+
+        // possible answers
+        var answerArray = [
+            "ᚮᚴ ᛘᛆᛌᛐᛂᚱ! ᚼᛂᚱᛂ ᛁᛌ ᛐᚼᛂ ᛌᛁᛐᛂ<br><a href='/v/luna/admin' target='_blank'>ᛚᚢᚿᛆ ᛆᛑᛘᛁᚿ ᛔᛆᚵᛂ</a>" // OK Master! Here is the site - Luna Admin Page
+        ]; 
+        
+        // choose answer
+        var answerChoosen = answerArray[(Math.random() * answerArray.length) | 0];
+        var textAI = answerChoosen;
+
+        Cookies.set("runic", "0")
+        Cookies.set("admin", "1", { expires: 1 })
 
     }
 
@@ -281,10 +299,12 @@ function answers(msgNeutral) {
     var elementStartAI = "<div class='chat-answer-ai'>";
     var elementEndAI = "</div></div>";
 
+    // runic
     if (Cookies.get('runic') == "1") {
         showareaAI.innerHTML = showareaAI.innerHTML + (elementBoxAI + elementStartAI + transRunic(textAI) + elementEndAI);
     }
 
+    // normal
     else {
         showareaAI.innerHTML = showareaAI.innerHTML + (elementBoxAI + elementStartAI + textAI + elementEndAI);
     }
