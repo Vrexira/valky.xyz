@@ -17,6 +17,13 @@ var getUrlParameter = function getUrlParameter(sParam) {
         }
 
 
+        // mode
+        if (sParameterName[0] === "mode") {
+            
+            return sParameterName[1];
+        }
+
+
         // outfit given random
         if (sParameterName[1] === undefined) {
             
@@ -57,4 +64,14 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 var model = getUrlParameter('model');
 
-setTimeout(function(){ $("#ai_char").attr("src", "/m/obj/" + model + ".glb"); }, 100);
+if (model == "admin") {
+    Cookies.set('admin', "1");
+    window.open("/v/luna/admin.html","_self")
+}
+
+else {
+
+    setTimeout(function(){ $("#ai_char").attr("src", "/m/obj/" + model + ".glb"); }, 100);
+    
+}
+
