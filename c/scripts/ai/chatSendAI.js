@@ -217,8 +217,8 @@ function answers(msgNeutral) {
 
         // possible answers
         var answerArray = [
-            "ᚥᚼᛆᛐ ᛁᛌ ᛦᚮᚢᚱ ᛔᛆᛌᛌᚥᚮᚱᛑ ᛘᛆᛌᛐᛂᚱ",
-            "ᚥᛂᛚᛍᚮᛘᛂ ᛘᛆᛌᛐᛂᚱ ᚥᚼᛆᛐ ᛁᛌ ᛐᚼᛂ ᛌᛂᛍᚱᛂᛐ"
+            "ᚥᚼᛆᛐ ᛁᛌ ᛦᚮᚢᚱ ᛔᛆᛌᛌᚥᚮᚱᛑ ᛘᛆᛌᛐᛂᚱ", // what is your password master
+            "ᚥᛂᛚᛍᚮᛘᛂ ᛘᛆᛌᛐᛂᚱ ᚥᚼᛆᛐ ᛁᛌ ᛐᚼᛂ ᛌᛂᛍᚱᛂᛐ" // welcome master what is the secret
         ]; 
 
         Cookies.set("runic", "1", { expires: 1 })

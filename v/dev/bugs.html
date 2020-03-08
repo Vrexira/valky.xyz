@@ -75,7 +75,7 @@
                     <div class="navbar-nav">
                         <a class="nav-item nav-link global-font-color pull-down-nav-text text-center" href="/v/dev/timeline">Timeline</a>
                         <a class="nav-item nav-link global-font-color pull-down-nav-text text-center" href="/v/dev/bugs">Known Bugs</a>
-                        <a class="nav-item nav-link global-font-color pull-down-nav-text text-center" href="/v/dev/preview">Developer Preview</a>
+                        <a class="nav-item nav-link global-font-color pull-down-nav-text text-center" href="https://play.valky.xyz/">Developer Preview</a>
                     </div>
                 </div>
 
@@ -121,31 +121,78 @@
 
     <div class="container pull-down">
 
-        <!-- 30. 11. 2019 -->
+        <!-- 25. 02. 2020 -->
         <div class="row pull-down">
             <div class="col-sm-2">
             </div>
             <div class="col-sm-8 main-text text-center pull-down">
-                <h2>30. Nov 2019</h2><br>
-                <p><del>When walking, player's mouth looks like that scream mask dude! You know, that movie Scream. Trying to fix it so you guys dont get scared anymore!</del>
-                <br><i><b>19-12-06 / Solution: </b>Need to remodel the 3D Model animation</i>
-                <br> · · · · · · · · · ·
-                <br><del>When stop running, a player can get stuck on point in the 'walking' animation. If she would move backwards now, we would have a moonwalk at least..</del>
-                <br><i><b>19-12-03 / Solution: </b>Since the computer only passes one keystroke at a time, an array is created to keep track of multiple keys.</i>
-                <br> · · · · · · · · · ·
-                <br>Human female NPC looks like a mannequin now.. She has no 'idle' animation anymore, I will show her how to chill again - but she moves on call when using keys from 1 to 4, even if she's too fast. Feels like I'm in the army..
-                <br> · · · · · · · · · ·
-                <br><del>The player's walking and running animations might bit too slow... Or maybe she's just too high? However, I need to fix it, so the animations and speed fits.</del>
-                <br><i><b>19-12-06 / Solution: </b>Need to fix the animation speed</i></p>
+                <h2>25. Feb 2020</h2><br>
+                <p>
+                    <i><b>Bug: </b></i>
+                    <br><del>Instead of only horizontal rotation, player model can be angled verticaly. At least it was never that easy to win in Limbo!</del>
+                    <br><i><b>20-02-26 / Solution: </b>
+                    <br>Created new independent onMouseMove function and disabled pitchObject.rotation() imported by Three.JS</i>
+                    <br>
+                    <br><i><b>Bug: </b></i>
+                    <br><del>New feature! You can bug through collision boxes and fall through the map - just in case someone wants to know whats below the ground.</del>
+                    <br><i><b>20-02-27 / Solution: </b>
+                    <br>Changed Phys-X and Light / Shadow settings. More infos here:</i>
+                    <br><i><b>Phys-X Changes: </b>
+                    <br>- Increased player collision radius from 10 to 15
+                    <br>- Increased player collision mass from 1 to 5
+                    <br>- Increased ground collision box height from 0 to 0.1 
+                    <br>- Increased ground collision mass from 5 to 25
+                    <br>- Decreased world gravity from 49 to 39</i>
+                    <br><i><b>Light and Shadow Changes: </b>
+                    <br>- Decreased shadow intensity from 8192px/m2 to 2048px/m2
+                    <br>- Removed shadow smoothing functionality</i>
+                    <br><i><b>DEVELOPER NOTE: </b>
+                    <br>Bug not fully solved yet, player can bug through collision boxes like houses when frames are dropping, 
+                        but they cant fall through the map anymore because of the higher mass and lower gravity. 
+                        The new Shadow and Light settings increase performance by around ~30%</i>
+                </p>
             </div>
             <div class="col-sm-2">
             </div>
         </div>
         
         <!-- space -->
-        <div class="row pull-down-main">
-            
+        <div class="row pull-down-main"></div>
+
+        <!-- 30. 11. 2019 -->
+        <div class="row pull-down">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-8 main-text text-center pull-down">
+                <h2>30. Nov 2019</h2><br>
+                <p>
+                    <i><b>Bug: </b></i>
+                    <br><del>When walking, player's mouth looks like that scream mask dude! You know, that movie Scream. Trying to fix it so you guys dont get scared anymore!</del>
+                    <br><i><b>19-12-06 / Solution: </b>
+                    <br>Need to remodel the 3D Model animation</i>
+                    <br>
+                    <br><i><b>Bug: </b></i>
+                    <br><del>When stop running, a player can get stuck on point in the 'walking' animation. If she would move backwards now, we would have a moonwalk at least..</del>
+                    <br><i><b>19-12-03 / Solution: </b>
+                    <br>Since the computer only passes one keystroke at a time, an array is created to keep track of multiple keys.</i>
+                    <br>
+                    <br><i><b>Bug: </b></i>
+                    <br><del>Human female NPC looks like a mannequin now.. She has no 'idle' animation anymore, I will show her how to chill again - but she moves on call when using keys from 1 to 4, even if she's too fast. Feels like I'm in the army..</del>
+                    <br><i><b>20-02-20 / Solution: </b>
+                    <br>Need to fix the multi-anim-gltf file export.</i>
+                    <br>
+                    <br><i><b>Bug: </b></i>
+                    <br><del>The player's walking and running animations might bit too slow... Or maybe she's just too high? However, I need to fix it, so the animations and speed fits.</del>
+                    <br><i><b>19-12-06 / Solution: </b>
+                    <br>Need to fix the animation speed</i>
+                </p>
+            </div>
+            <div class="col-sm-2">
+            </div>
         </div>
+        
+        <!-- space -->
+        <div class="row pull-down-main"></div>
 
     </div>
 
