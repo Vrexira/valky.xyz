@@ -96,13 +96,12 @@ hr {
     display: block;
 }
 
-.stream-bg {
-    background-image:url(/m/img/main/work/bg.png);
+.short-bg {
+    background-image:url(/m/img/main/short/bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #16141A;
     display: block;
 }
 
