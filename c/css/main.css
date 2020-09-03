@@ -312,6 +312,7 @@ hr {
     letter-spacing: 2;
     left: 50%;
     top: 50%;
+    color: white;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
