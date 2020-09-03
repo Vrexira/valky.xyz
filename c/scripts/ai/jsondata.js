@@ -3,7 +3,7 @@ if (Cookies.get('admin') == "1") {
 
 
     // luna
-    $.getJSON("/m/json/luna.json", function (jsonFromFile) {
+    $.getJSON("https://valky.xyz/m/json/luna.json", function (jsonFromFile) {
 
         $(function () {
             $('#table-luna').bootstrapTable({
@@ -15,7 +15,7 @@ if (Cookies.get('admin') == "1") {
 
 
     // welcome
-    $.getJSON("/m/json/welcome.json", function (jsonFromFile) {
+    $.getJSON("https://valky.xyz/m/json/welcome.json", function (jsonFromFile) {
 
         $(function () {
             $('#table-welcome').bootstrapTable({
@@ -27,7 +27,7 @@ if (Cookies.get('admin') == "1") {
 
 
     // runic
-    $.getJSON("/m/json/runic.json", function (jsonFromFile) {
+    $.getJSON("https://valky.xyz/m/json/runic.json", function (jsonFromFile) {
 
         $(function () {
             $('#table-runic').bootstrapTable({
@@ -42,5 +42,5 @@ if (Cookies.get('admin') == "1") {
 }
 
 else {
-    window.open("/v/404","_self");
+    window.open("/404","_self");
 }

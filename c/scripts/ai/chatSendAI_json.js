@@ -34,7 +34,7 @@ function answers(msgNeutral) {
 
 
     // path to JSON
-    var msMapURL = "/m/json/welcome.json";
+    var msMapURL = "https://valky.xyz/m/json/welcome.json";
 
 
     // variables for messages

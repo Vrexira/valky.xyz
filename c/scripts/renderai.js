@@ -66,12 +66,12 @@ var model = getUrlParameter('model');
 
 if (model == "admin") {
     Cookies.set('admin', "1");
-    window.open("/v/luna/admin.html","_self")
+    window.open("/admin.html","_self")
 }
 
 else {
 
-    setTimeout(function(){ $("#ai_char").attr("src", "/m/obj/" + model + ".glb"); }, 100);
+    setTimeout(function(){ $("#ai_char").attr("src", "https://valky.xyz/m/obj/" + model + ".glb"); }, 100);
     
 }
 
