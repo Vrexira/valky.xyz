@@ -26,7 +26,7 @@ body {
     height: 50%;
     background-image: radial-gradient(
             ellipse 50% 35% at 50% 50%,
-            #6b1818,
+            #646464,
             transparent
     );
     transform: translate(-50%, -50%);
@@ -37,10 +37,10 @@ body {
     font-family: 'Brush', monospace;
     text-transform: uppercase;
     font-size: 6em;
-    color: #ffe6e6;
-    text-shadow: 0 0 0.6rem #ffe6e6, 0 0 1.5rem #ff6565,
-    -0.2rem 0.1rem 1rem #ff6565, 0.2rem 0.1rem 1rem #ff6565,
-    0 -0.5rem 2rem #ff2424, 0 0.5rem 3rem #ff2424;
+    color: #ffffff;
+    text-shadow: 0 0 0.6rem #ececec, 0 0 1.5rem #bebebe,
+    -0.2rem 0.1rem 1rem #888888, 0.2rem 0.1rem 1rem #515151,
+    0 -0.5rem 2rem #3c3c3c, 0 0.5rem 3rem #262626;
     animation: shine 2s forwards, flicker 3s infinite;
 
     -webkit-touch-callout: none;
@@ -57,19 +57,19 @@ body {
     22%,
     36%,
     75% {
-        color: #ffe6e6;
-        text-shadow: 0 0 0.6rem #ffe6e6, 0 0 1.5rem #ff6565,
-        -0.2rem 0.1rem 1rem #ff6565, 0.2rem 0.1rem 1rem #ff6565,
-        0 -0.5rem 2rem #ff2424, 0 0.5rem 3rem #ff2424;
+        color: #ffffff;
+        text-shadow: 0 0 0.6rem #ececec, 0 0 1.5rem #bebebe,
+        -0.2rem 0.1rem 1rem #888888, 0.2rem 0.1rem 1rem #515151,
+        0 -0.5rem 2rem #3c3c3c, 0 0.5rem 3rem #262626;
     }
     28%,
     33% {
-        color: #ff6565;
+        color: #727272;
         text-shadow: none;
     }
     82%,
     97% {
-        color: #ff2424;
+        color: #343434;
         text-shadow: none;
     }
 }
@@ -88,14 +88,14 @@ body {
 
 @keyframes shine {
     0% {
-        color: #6b1818;
+        color: #646464;
         text-shadow: none;
     }
     100% {
-        color: #ffe6e6;
-        text-shadow: 0 0 0.6rem #ffe6e6, 0 0 1.5rem #ff6565,
-        -0.2rem 0.1rem 1rem #ff6565, 0.2rem 0.1rem 1rem #ff6565,
-        0 -0.5rem 2rem #ff2424, 0 0.5rem 3rem #ff2424;
+        color: #ffffff;
+        text-shadow: 0 0 0.6rem #ececec, 0 0 1.5rem #bebebe,
+        -0.2rem 0.1rem 1rem #888888, 0.2rem 0.1rem 1rem #515151,
+        0 -0.5rem 2rem #3c3c3c, 0 0.5rem 3rem #262626;
     }
 }
 
