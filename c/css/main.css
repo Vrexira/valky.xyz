@@ -22,6 +22,10 @@ hr {
     text-align: right;
 }
 
+.text-align-l {
+    text-align: left;
+}
+
 .col {
     width: 50%;
 }
