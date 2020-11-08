@@ -2,7 +2,7 @@
 // Read the json file for image-info
 // ---------------------------------
 
-imgMapURL = "/scripts/emotes.json"
+imgMapURL = "https://valky.xyz/m/json/emotes.json"
 
 itemDivSrc = '<img src="';
 itemDivAlt = '" class="menu-item" alt="';
