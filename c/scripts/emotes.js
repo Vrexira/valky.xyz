@@ -5,7 +5,7 @@
 imgMapURL = "https://valky.xyz/m/json/emotes.json"
 
 itemDivSrc = '<img src="';
-itemDivAlt = '" class="menu-item" alt="';
+itemDivAlt = '" class="gallery-size zoom" alt="';
 itemDivMid = '" data-toggle="tooltip" data-html="true" data-trigger="hover" data-placement="right" rel="tooltip" title="';
 itemDivEnd = '">';
 
@@ -76,6 +76,12 @@ function addGlobalGallery(jsonFile) {
         
 		});
     });
+
+    setTimeout(function(){
+        fillEmpty();
+        $('.gallery-size').tooltip();
+    }, 200);
+
 }
 
 
