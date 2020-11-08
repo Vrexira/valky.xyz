@@ -30,7 +30,7 @@ function addGlobalGallery(jsonFile) {
 
 
             // Check for category and create img element
-            if (imgCat === "viola") {
+            if (imgCat === "heralyn") {
 
                 galleryGlobalImg = (itemDivSrc + imgSrc + itemDivAlt + imgName + itemDivMid + imgTip + itemDivEnd)
 
@@ -38,36 +38,6 @@ function addGlobalGallery(jsonFile) {
                 galleryGlobalId = "gallery-" + imgCat;
                 galleryGlobal = document.getElementById(galleryGlobalId)
 
-                // Add images to gallery
-                galleryGlobal.innerHTML += galleryGlobalImg;
-
-            }
-
-
-            // Check for category and create img element
-            if (imgCat === "luna") {
-
-                galleryGlobalImg = (itemDivSrc + imgSrc + itemDivAlt + imgName + itemDivMid + imgTip + itemDivEnd)
-
-                // Variables for gallery
-                galleryGlobalId = "gallery-" + imgCat;
-                galleryGlobal = document.getElementById(galleryGlobalId)
-            
-                // Add images to gallery
-                galleryGlobal.innerHTML += galleryGlobalImg;
-
-            }
-            
-            
-            // Check for category and create img element
-			if (imgCat === "valky") {
-
-                galleryGlobalImg = (itemDivSrc + imgSrc + itemDivAlt + imgName + itemDivMid + imgTip + itemDivEnd)
-
-                // Variables for gallery
-                galleryGlobalId = "gallery-" + imgCat;
-                galleryGlobal = document.getElementById(galleryGlobalId)
-            
                 // Add images to gallery
                 galleryGlobal.innerHTML += galleryGlobalImg;
 
