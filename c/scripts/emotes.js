@@ -26,7 +26,7 @@ function addGlobalGallery(jsonFile) {
             let imgName = this.name;
             let imgDesc = this.description;
 
-            let imgTip = "<b>" + imgName + "</b><hr><a href='" + imgDesc + "'></a>";
+            let imgTip = "<b>" + imgName + "</b><hr><a href='" + imgDesc + "'>" + imgDesc + "</a>";
 
 
             // Check for category and create img element
