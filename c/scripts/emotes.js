@@ -32,7 +32,7 @@ function addGlobalGallery(jsonFile) {
             // Check for category and create img element
             if (imgCat === "viola") {
 
-                galleryGlobalImg = (imgDivURL + imgSrc + imgDivAlt + imgName + itemDivMid + imgTip + itemDivEnd)
+                galleryGlobalImg = (itemDivSrc + imgSrc + itemDivAlt + imgName + itemDivMid + imgTip + itemDivEnd)
 
                 // Variables for gallery
                 galleryGlobalId = "gallery-" + imgCat;
@@ -47,7 +47,7 @@ function addGlobalGallery(jsonFile) {
             // Check for category and create img element
             if (imgCat === "luna") {
 
-                galleryGlobalImg = (imgDivURL + imgSrc + imgDivAlt + imgName + itemDivMid + imgTip + itemDivEnd)
+                galleryGlobalImg = (itemDivSrc + imgSrc + itemDivAlt + imgName + itemDivMid + imgTip + itemDivEnd)
 
                 // Variables for gallery
                 galleryGlobalId = "gallery-" + imgCat;
@@ -62,7 +62,7 @@ function addGlobalGallery(jsonFile) {
             // Check for category and create img element
 			if (imgCat === "valky") {
 
-                galleryGlobalImg = (imgDivURL + imgSrc + imgDivAlt + imgName + itemDivMid + imgTip + itemDivEnd)
+                galleryGlobalImg = (itemDivSrc + imgSrc + itemDivAlt + imgName + itemDivMid + imgTip + itemDivEnd)
 
                 // Variables for gallery
                 galleryGlobalId = "gallery-" + imgCat;
