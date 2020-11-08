@@ -78,7 +78,6 @@ function addGlobalGallery(jsonFile) {
     });
 
     setTimeout(function(){
-        fillEmpty();
         $('.gallery-size').tooltip();
     }, 200);
 
