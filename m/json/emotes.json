@@ -231,181 +231,265 @@
         "animated":1
     },
     "emote34":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/608996641676197908.png",
+        "cat":"mercymain",
+        "name":"Witch Lurk",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote35":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/608996641688780830.png",
+        "cat":"mercymain",
+        "name":"Witch Happy",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote36":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/407885026924167170.png",
+        "cat":"mercymain",
+        "name":"Witch Canada",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote37":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/443800508126461953.png",
+        "cat":"mercymain",
+        "name":"Pink Lurk",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote38":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/443800506746535936.png?v=1",
+        "cat":"mercymain",
+        "name":"Pink Love",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote39":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/443800505626525698.png?v=1",
+        "cat":"mercymain",
+        "name":"Pink Happy",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote40":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/443800504095473665.png?v=1",
+        "cat":"mercymain",
+        "name":"Pink Lewd",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote41":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/443800502531260426.png?v=1",
+        "cat":"mercymain",
+        "name":"Pink Cool",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote42":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/411558887922204682.png?v=1",
+        "cat":"mercymain",
+        "name":"Nike Love",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote43":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/406705918579834881.png?v=1",
+        "cat":"mercymain",
+        "name":"Nike Happy",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote44":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/713030446169981019.png?v=1",
+        "cat":"mercymain",
+        "name":"Mercy Trash",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote45":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/406706502418694156.png?v=1",
+        "cat":"mercymain",
+        "name":"Mercy Thumb Up",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote46":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/406706502238208012.png?v=1",
+        "cat":"mercymain",
+        "name":"Mercy Tea",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote47":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/608996641294385162.png?v=1",
+        "cat":"mercymain",
+        "name":"Mercy Sweat Smile",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote48":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/406706502171361281.png?v=1",
+        "cat":"mercymain",
+        "name":"Mercy Hello",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote49":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/406706502666289152.png?v=1",
+        "cat":"mercymain",
+        "name":"Mercy Lewd",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote50":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/406706502565363712.png?v=1",
+        "cat":"mercymain",
+        "name":"Mercy Cry",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote51":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/406706502301253633.png?v=1",
+        "cat":"mercymain",
+        "name":"Mercy Cool",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote52":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/407885099560992770.png?v=1",
+        "cat":"mercymain",
+        "name":"Mercy Canada",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote53":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/406892860974301194.png?v=1",
+        "cat":"mercymain",
+        "name":"Imp Trash",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote54":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/406892860839821323.png?v=1",
+        "cat":"mercymain",
+        "name":"Imp Thumb Up",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote55":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/406892953194201099.png?v=1",
+        "cat":"mercymain",
+        "name":"Imp Lurk",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote56":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/406892860928163842.png?v=1",
+        "cat":"mercymain",
+        "name":"Imp Hello",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote57":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+        "src":"https://cdn.discordapp.com/emojis/406705878004400139.png?v=1",
+        "cat":"mercymain",
+        "name":"Imp Happy",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
-    "emote60":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":"",
+    "emote58":{
+        "src":"https://cdn.discordapp.com/emojis/406892861057925160.png?v=1",
+        "cat":"mercymain",
+        "name":"Imp Lewd",
+        "description":"https://discord.gg/qAZcXWq",
         "animated":0
     },
     "emote59":{
+        "src":"https://cdn.discordapp.com/emojis/406892860668116992.png?v=1",
+        "cat":"mercymain",
+        "name":"Imp Cry",
+        "description":"https://discord.gg/qAZcXWq",
+        "animated":0
+    },
+    "emote60":{
+        "src":"https://cdn.discordapp.com/emojis/406892860642689024.png?v=1",
+        "cat":"mercymain",
+        "name":"Imp Cool",
+        "description":"https://discord.gg/qAZcXWq",
+        "animated":0
+    },
+    "emote61":{
+        "src":"https://cdn.discordapp.com/emojis/713030539313020938.png?v=1",
+        "cat":"mercymain",
+        "name":"Combat Trash",
+        "description":"https://discord.gg/qAZcXWq",
+        "animated":0
+    },
+    "emote62":{
+        "src":"https://cdn.discordapp.com/emojis/406705843711639562.png?v=1",
+        "cat":"mercymain",
+        "name":"Combat Facepalm",
+        "description":"https://discord.gg/qAZcXWq",
+        "animated":0
+    },
+    "emote63":{
+        "src":"https://cdn.discordapp.com/emojis/713030555104706610.png?v=1",
+        "cat":"mercymain",
+        "name":"Combat Lurk",
+        "description":"https://discord.gg/qAZcXWq",
+        "animated":0
+    },
+    "emote64":{
+        "src":"https://cdn.discordapp.com/emojis/411558744753963008.png?v=1",
+        "cat":"mercymain",
+        "name":"Combat LUL",
+        "description":"https://discord.gg/qAZcXWq",
+        "animated":0
+    },
+    "emote65":{
+        "src":"https://cdn.discordapp.com/emojis/406705856441483270.png?v=1",
+        "cat":"mercymain",
+        "name":"Combat Happy",
+        "description":"https://discord.gg/qAZcXWq",
+        "animated":0
+    },
+    "emote66":{
+        "src":"https://cdn.discordapp.com/emojis/411559568779378689.gif?v=1",
+        "cat":"mercymain",
+        "name":"Mercy Love Animated",
+        "description":"https://discord.gg/qAZcXWq",
+        "animated":1
+    },
+    "emote67":{
+        "src":"https://cdn.discordapp.com/emojis/411559940830920705.gif?v=1",
+        "cat":"mercymain",
+        "name":"Mercy Cool Animated",
+        "description":"https://discord.gg/qAZcXWq",
+        "animated":1
+    },
+    "emote68":{
+        "src":"https://cdn.discordapp.com/emojis/764140401313185812.png?v=1",
+        "cat":"misc",
+        "name":"Peepo Rasta",
+        "description":"Free Plubic Usage",
+        "animated":0
+    },
+    "emote69":{
+        "src":"https://cdn.discordapp.com/emojis/608994655358418965.png?v=1",
+        "cat":"misc",
+        "name":"Heals Bad Man",
+        "description":"Free Public Usage",
+        "animated":0
+    },
+    "emote70":{
+        "src":"https://cdn.discordapp.com/emojis/657635089139630130.png?v=1",
+        "cat":"ssupermexicant",
+        "name":"Pharah Lazy",
+        "description":"https://twitch.tv/ssupermexicant",
+        "animated":0
+    },
+    "emote71":{
         "src":"",
         "cat":"",
         "name":"",

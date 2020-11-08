@@ -29,7 +29,7 @@ function addGlobalGallery(jsonFile) {
             let imgTip = "<b>" + imgName + "</b><hr>" + imgDesc;
 
             // Check for category and create img element
-            if (imgCat === "heralyn" || imgCat === "mercymain") {
+            if (imgCat === "heralyn" || imgCat === "mercymain" || imgCat === "ssupermexicant" || imgCat === "misc") {
 
                 galleryGlobalImg = (itemDivSrc + imgSrc + itemDivAlt + imgName + itemDivMid + imgTip + itemDivEnd)
 
@@ -41,7 +41,7 @@ function addGlobalGallery(jsonFile) {
                 galleryGlobal.innerHTML += galleryGlobalImg;
 
             }
-        
+
 		});
     });
 
