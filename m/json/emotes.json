@@ -3,354 +3,413 @@
         "src":"https://cdn.discordapp.com/emojis/772433974848913449.png",
         "cat":"heralyn",
         "name":"Yum",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote2":{
         "src":"https://cdn.discordapp.com/emojis/664450943470796823.png",
         "cat":"heralyn",
         "name":"Wow",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote3":{
         "src":"https://cdn.discordapp.com/emojis/664450886583713796.png",
         "cat":"heralyn",
         "name":"Think",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote4":{
         "src":"https://cdn.discordapp.com/emojis/774987370310926357.png",
         "cat":"heralyn",
         "name":"Smug",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote5":{
         "src":"https://cdn.discordapp.com/emojis/772398223255273482.png",
         "cat":"heralyn",
         "name":"Jam",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote6":{
         "src":"https://cdn.discordapp.com/emojis/772443798416261140.png",
         "cat":"heralyn",
         "name":"Hug",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote7":{
         "src":"https://cdn.discordapp.com/emojis/664450828676890674.png",
         "cat":"heralyn",
         "name":"Hmm",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote8":{
         "src":"https://cdn.discordapp.com/emojis/664450770141315082.png",
         "cat":"heralyn",
         "name":"Hello",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote9":{
         "src":"https://cdn.discordapp.com/emojis/664450688553582592.png",
         "cat":"heralyn",
         "name":"Gun",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote10":{
         "src":"https://cdn.discordapp.com/emojis/774700641188184070.png",
         "cat":"heralyn",
         "name":"Money",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote11":{
         "src":"https://cdn.discordapp.com/emojis/654661259601510431.png",
         "cat":"heralyn",
         "name":"Sip",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote12":{
         "src":"https://cdn.discordapp.com/emojis/772467727662579712.png",
         "cat":"heralyn",
         "name":"Shrug",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote13":{
         "src":"https://cdn.discordapp.com/emojis/658686412140576768.png",
         "cat":"heralyn",
         "name":"Pat",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote14":{
         "src":"https://cdn.discordapp.com/emojis/655809971929350195.png",
         "cat":"heralyn",
         "name":"Not Like This",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote15":{
         "src":"https://cdn.discordapp.com/emojis/654646249399779348.png",
         "cat":"heralyn",
         "name":"Lurk",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote16":{
         "src":"https://cdn.discordapp.com/emojis/656833341013753878.png",
         "cat":"heralyn",
         "name":"Comfy",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote17":{
         "src":"https://cdn.discordapp.com/emojis/657297172575813648.png",
         "cat":"heralyn",
         "name":"Cool",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote18":{
         "src":"https://cdn.discordapp.com/emojis/655495270699892737.png",
         "cat":"heralyn",
         "name":"Baka",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote19":{
         "src":"https://cdn.discordapp.com/emojis/661227117731774464.png",
         "cat":"heralyn",
         "name":"Ayaya",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote20":{
         "src":"https://cdn.discordapp.com/emojis/658670218821763102.png",
         "cat":"heralyn",
         "name":"Amazed",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote21":{
         "src":"https://cdn.discordapp.com/emojis/658661759229362197.png",
         "cat":"heralyn",
         "name":"Wink",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote22":{
         "src":"https://cdn.discordapp.com/emojis/656906190713782286.png",
         "cat":"heralyn",
         "name":"Unamused",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote23":{
         "src":"https://cdn.discordapp.com/emojis/654632752184033280.png",
         "cat":"heralyn",
         "name":"Sleep",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote24":{
         "src":"https://cdn.discordapp.com/emojis/655150053232607252.png",
         "cat":"heralyn",
         "name":"love",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote25":{
         "src":"https://cdn.discordapp.com/emojis/654370967249879070.png",
         "cat":"heralyn",
         "name":"Happy",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote26":{
         "src":"https://cdn.discordapp.com/emojis/656906105309364239.png",
         "cat":"heralyn",
         "name":"Lewd",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote27":{
         "src":"https://cdn.discordapp.com/emojis/655159377820516392.png",
         "cat":"heralyn",
         "name":"This Is Fine",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote28":{
         "src":"https://cdn.discordapp.com/emojis/655821623399809054.png",
         "cat":"heralyn",
         "name":"Cry",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote29":{
         "src":"https://cdn.discordapp.com/emojis/655483171726426132.png",
         "cat":"heralyn",
         "name":"Blush",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote30":{
         "src":"https://cdn.discordapp.com/emojis/774592036271030272.png",
         "cat":"heralyn",
         "name":"Killer",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote31":{
         "src":"https://cdn.discordapp.com/emojis/774736005340856361.png",
         "cat":"heralyn",
         "name":"High",
-        "description":"https://twitch.tv/heralyn"
+        "description":"https://twitch.tv/heralyn",
+        "animated":0
     },
     "emote32":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":""
+        "src":"https://cdn.discordapp.com/emojis/772479105466892288.gif",
+        "cat":"heralyn",
+        "name":"Shrug Animated",
+        "description":"https://twitch.tv/heralyn",
+        "animated":1
     },
     "emote33":{
-        "src":"",
-        "cat":"",
-        "name":"",
-        "description":""
+        "src":"https://cdn.discordapp.com/emojis/772405009920819210.gif",
+        "cat":"heralyn",
+        "name":"Jam Animated",
+        "description":"https://twitch.tv/heralyn",
+        "animated":1
     },
     "emote34":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote35":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote36":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote37":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote38":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote39":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote40":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote41":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote42":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote43":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote44":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote45":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote46":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote47":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote48":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote49":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote50":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote51":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote52":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote53":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote54":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote55":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote56":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote57":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote60":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     },
     "emote59":{
         "src":"",
         "cat":"",
         "name":"",
-        "description":""
+        "description":"",
+        "animated":0
     }
 }

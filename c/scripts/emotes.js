@@ -25,8 +25,9 @@ function addGlobalGallery(jsonFile) {
             let imgCat = this.cat;
             let imgName = this.name;
             let imgDesc = this.description;
+            let imgAni = this.animated;
 
-            let imgTip = "<b>" + imgName + "</b><hr><a href='" + imgDesc + "'>" + imgDesc + "</a>";
+            let imgTip = "<b>" + imgName + "</b><hr>" + imgDesc;
 
 
             // Check for category and create img element
@@ -35,7 +36,7 @@ function addGlobalGallery(jsonFile) {
                 galleryGlobalImg = (itemDivSrc + imgSrc + itemDivAlt + imgName + itemDivMid + imgTip + itemDivEnd)
 
                 // Variables for gallery
-                galleryGlobalId = "gallery-" + imgCat;
+                galleryGlobalId = imgAni !== 1 ? "gallery-" + imgCat : "gallery-" + imgCat + "-anim";
                 galleryGlobal = document.getElementById(galleryGlobalId)
 
                 // Add images to gallery
