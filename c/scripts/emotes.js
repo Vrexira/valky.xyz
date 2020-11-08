@@ -16,22 +16,20 @@ function addGlobalGallery(jsonFile) {
         let endData = $.parseJSON(newData);
 		$.each(endData, function(index, value) {
 
-            let galleryGlobal;
-            let galleryGlobalId;
-            let galleryGlobalImg;
-
             // Variables read from json file
-            let imgSrc = this.src;
-            let imgCat = this.cat;
-            let imgName = this.name;
-            let imgDesc = this.description;
-            let imgAni = this.animated;
+            let {
+                src: imgSrc,
+                cat: imgCat,
+                name: imgName,
+                description: imgDesc,
+                animated: imgAni
+            } = this;
 
+            let galleryGlobal, galleryGlobalId, galleryGlobalImg;
             let imgTip = "<b>" + imgName + "</b><hr>" + imgDesc;
 
-
             // Check for category and create img element
-            if (imgCat === "heralyn") {
+            if (imgCat === "heralyn" || imgCat === "mercymain") {
 
                 galleryGlobalImg = (itemDivSrc + imgSrc + itemDivAlt + imgName + itemDivMid + imgTip + itemDivEnd)
 
@@ -43,7 +41,6 @@ function addGlobalGallery(jsonFile) {
                 galleryGlobal.innerHTML += galleryGlobalImg;
 
             }
-            
         
 		});
     });
