@@ -4,6 +4,8 @@
 // ---------------- //
 // CHAT ANSWER - AI //
 // ---------------- //
+this.metakey = undefined;
+
 function answers(msgNeutral) {
 
 
@@ -53,54 +55,35 @@ function answers(msgNeutral) {
         $.each(endData, function(index, value) {
 
             // read from JSON file
-            msgID = this.ID;
-            msgMetakey = this.metakey;
-            msgMessage = this.message;
+            let msgID = this.ID;
+            let msgMetakey = this.metakey;
+            let msgMessage = this.message;
 
             // metakey iterator
             var iteratorMetakey = msgMetakey.values();
 
 
-            for (const valueMetakey of iteratorMetakey) {
+            for (const valueMetakey of iteratorMetakey) if (msgNeutral.toLowerCase().includes(valueMetakey)) {
 
-                if (msgNeutral.toLowerCase().includes(valueMetakey)) {
+                // choose answer
+                var textAI = msgMessage[(Math.random() * msgMessage.length) | 0];
 
-                    // choose answer
-                    var answerChoosen = msgMessage[(Math.random() * msgMessage.length) | 0];
-                    var textAI = answerChoosen;
+                // send answer runic
+                if (Cookies.get('runic') === 1) {
+                    showareaAI.innerHTML = showareaAI.innerHTML + (elementBoxAI + elementStartAI + transRunic(textAI) + elementEndAI);
+                    break;
+                }
 
-
-                    // send answer
-
-                    // runic
-                    if (Cookies.get('runic') == 1) {
-
-                        showareaAI.innerHTML = showareaAI.innerHTML + (elementBoxAI + elementStartAI + transRunic(textAI) + elementEndAI);
-                        break;
-
-                    }
-                    
-                    // normal
-                    else {
-
-                        showareaAI.innerHTML = showareaAI.innerHTML + (elementBoxAI + elementStartAI + textAI + elementEndAI);
-                        break;
-
-                    }
-
-
-
+                // send answer normal
+                else {
+                    showareaAI.innerHTML = showareaAI.innerHTML + (elementBoxAI + elementStartAI + textAI + elementEndAI);
+                    break;
                 }
 
             }
 
 
-
-
-
         });
-
-
 
     });
 
