@@ -372,6 +372,13 @@ hr {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.main-text-head-valkyria {
+    font-family: 'Cookie', serif;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 
 /* Link */
 a:link {
