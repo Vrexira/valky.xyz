@@ -327,6 +327,33 @@ hr {
 
 }
 
+.main-title-valkyria {
+
+    font-family: 'Cookie', serif;
+    text-transform: uppercase;
+
+    font-size: 5em;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 2;
+    left: 50%;
+    top: 50%;
+    color: white;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
 .main-logo {
     height: 100px;
 }
