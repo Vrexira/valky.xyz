@@ -5,6 +5,34 @@
   * IMPORTANT: Needs valkframe.dev.css added to the project
   */
 
+
+/**
+ * AMPLIFY MEDIA
+ * ----------------
+ * ----------------
+ * - Allows to amplify media over 100%
+ * - Media has to be inside a HTML5 media tag, i.e <video>
+ * @param {Element} mediaElem Needs an element id as input.
+ * @param {Number} multiplier Needs a floating number as input (0.0 - 9.9)
+ * @returns {NULL} Does not return a value.
+ */
+function amplifyMedia(mediaElem, multiplier) {
+    var context = new (window.AudioContext || window.webkitAudioContext),
+        result = {
+            context: context,
+            source: context.createMediaElementSource(mediaElem),
+            gain: context.createGain(),
+            media: mediaElem,
+            amplify: function(multiplier) { result.gain.gain.value = multiplier; },
+            getAmpLevel: function() { return result.gain.gain.value; }
+        };
+    result.source.connect(result.gain);
+    result.gain.connect(context.destination);
+    result.amplify(multiplier);
+    return result;
+}
+
+
 /**
  * SET ITEM FLAG
  * ----------------
