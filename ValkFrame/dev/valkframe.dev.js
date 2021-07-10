@@ -24,11 +24,6 @@
  *
  * @IMPORTANT Needs valkframe.dev.css added to the project
  */
-/*!
-  * ValkFrame v0.0.1 (https://vky.re/ValkFrame)
-  * Copyright 2021 VALKYTEQ (https://valkyteq.com)
-  * Licensed under MIT
-  */
 
 
 /**
