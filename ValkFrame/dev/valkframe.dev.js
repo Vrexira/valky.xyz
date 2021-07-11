@@ -1,9 +1,6 @@
-/**
- * @fileOverview Simple library with different smol functions :3
- * @version 0.1.1
- * @license Copyright (c) 2021 VALKYTEQ
- * IMPORTANT: Needs valkframe.dev.css added to the project
- *
+/**VALKFRAME.DEV.JS
+ * ----------------
+ * ----------------
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
@@ -21,6 +18,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
+ * ----------------
+ * ----------------
+ * @fileOverview Simple library with different smol functions :3
+ * @version 0.1.1
+ * @license MIT
+ * @copyright 2021 (c) VALKYTEQ
+ * @Important Needs valkframe.dev.css added to the project
  */
 function fileOverview(){}
 
