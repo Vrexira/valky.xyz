@@ -14,6 +14,11 @@
     "author":"~The Saga of Harald Hardrade, c.46",
     "meaning":"Nothing good comes from letting your worries stand in your way. Be bold, and push back."
 },{
+    "id":"4",
+    "quote":"Wake early if you want another man’s life or land. No battle’s won in bed.",
+    "author":"~The Havamal",
+    "meaning":"If you want something, go out there and get it. Laziness has no reward."
+},{
     "id":"5",
     "quote":"Ill it is to take love from another man’s wife.",
     "author":"~Volsunga, c.21",
@@ -323,6 +328,11 @@
     "quote":"Numbers cannot skill withstand.",
     "author":"~The Saga of Harald Hardrade, c.65",
     "meaning":"Sometimes quantity does beat quality. Even the most skilled swordsman will lose a battle against an army."
+},{
+    "id":"67",
+    "quote":"Be your friend’s true friend. Return gift for gift. Repay laughter with laughter again, but betrayal with treachery.",
+    "author":"~The Havamal",
+    "meaning":"Friendship is a two-way street."
 },{
     "id":"68",
     "quote":"A person should exhibit frith whatever may come. Though many wish for good, ill is oft the more mighty.",
@@ -698,6 +708,11 @@
     "author":"~The Saga of Njal, chapter 139",
     "meaning":"Don’t play the blame game. Focus on solutions."
 },{
+    "id":"143",
+    "quote":"Let no man glory in the greatness of his mind, but rather keep watch o’er his wits. Cautious and silent let him enter a dwelling; to the heedful comes seldom harm, for none can find a more faithful friend than the wealth of mother wit.",
+    "author":"~The Havamal",
+    "meaning":"Keep a level head. Pride often leads to misfortune."
+},{
     "id":"144",
     "quote":"Old friends are the last to break away.",
     "author":"~The Saga of Grettir, chapter 82",
@@ -1028,67 +1043,52 @@
     "author":"~The Havamal",
     "meaning":"Your self-worth comes from you and you alone. Don’t let your social standing determine your level of self-esteem."
 },{
-    "id":"220",
-    "quote":"Wake early if you want another man’s life or land. No battle’s won in bed.",
-    "author":"~The Havamal",
-    "meaning":"If you want something, go out there and get it. Laziness has no reward."
-},{
-    "id":"221",
-    "quote":"Be your friend’s true friend. Return gift for gift. Repay laughter with laughter again, but betrayal with treachery.",
-    "author":"~The Havamal",
-    "meaning":"Friendship is a two-way street."
-},{
-    "id":"222",
-    "quote":"Let no man glory in the greatness of his mind, but rather keep watch o’er his wits. Cautious and silent let him enter a dwelling; to the heedful comes seldom harm, for none can find a more faithful friend than the wealth of mother wit.",
-    "author":"~The Havamal",
-    "meaning":"Keep a level head. Pride often leads to misfortune."
-},{
-    "id":"223",
+    "id":"210",
     "quote":"Wise he is deemed who can question well, and also answer back: the sons of men can no secret make of the tidings told in their midst.",
     "author":"~The Havamal",
     "meaning":"The art of conversation is extremely valuable. Know the questions to ask and the answers to give."
 },{
-    "id":"224",
+    "id":"211",
     "quote":"Never a whit should one blame another for a folly which many befalls; the might of love makes sons of men into fools who once were wise.",
     "author":"~The Havamal",
     "meaning":"The power of love can make reasonable people do crazy things."
 },{
-    "id":"225",
+    "id":"212",
     "quote":"A fool will gape when he goes to a friend, and mumble only, or mope; but pass him the ale cup and all in a moment the mind of that man is shown.",
     "author":"~The Havamal",
     "meaning":"Alcohol can be a truth serum. Sometimes true thoughts and feelings come out after a few drinks."
 },{
-    "id":"226",
+    "id":"213",
     "quote":"Wake early if you want another man’s life or land.",
     "author":"~The Havamal",
     "meaning":"No battle is won in bed."
 },{
-    "id":"227",
+    "id":"214",
     "quote":"Go you must. No guest shall stay in one place for ever. Love will be lost if you sit too long at a friend’s fire.",
     "author":"~The Havamal",
     "meaning":"It can be easy to get complacent. Keep pushing ahead, and don’t get too comfortable in one place."
 },{
-    "id":"228",
+    "id":"215",
     "quote":"No lamb for the lazy wolf.",
     "author":"~Heralyn",
     "meaning":"If you want to achieve something you have to do something."
 },{
-    "id":"229",
+    "id":"216",
     "quote":"When one wolf hunts for another he may eat the prey.",
     "author":"~Heralyn",
     "meaning":"If someone does your work for you, don’t be surprised when they get the rewards."
 },{
-    "id":"230",
+    "id":"217",
     "quote":"For often grows the wolf in the child.",
     "author":"~Heralyn",
     "meaning":"If you’ve wronged or cheated someone, it may get back to you."
 },{
-    "id":"231",
+    "id":"218",
     "quote":"Where wolf’s ears are, wolf’s teeth are near.",
     "author":"~Heralyn",
     "meaning":"Stay aware of your surroundings. Smoke often means fire."
 },{
-    "id":"232",
+    "id":"219",
     "quote":"A hungry wolf is bound to wage a hard battle.",
     "author":"~Heralyn",
     "meaning":"A desperate person in need will fight harder than one who has it all."
